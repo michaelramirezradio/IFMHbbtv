@@ -32,71 +32,127 @@ var activePanelId = null;
 var isHdStreamPlaying = false;
 var currentMenuIndex = 0;
 
+// Mapeo de fotos oficiales de Radio DJs (Remota CDN + Local de Respaldo)
+var djPhotoMap = {
+    "Michael Ramírez": {
+        remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg",
+        local: "/djs/michael_ramirez.jpg"
+    },
+    "Juan Carlos Santomé": {
+        remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg",
+        local: "/djs/juan_carlos_santome.jpg"
+    },
+    "José Ibáñez": {
+        remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg",
+        local: "/djs/jose_ibanez.jpg"
+    },
+    "Jaime Falcón": {
+        remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png",
+        local: "/djs/jaime_falcon.png"
+    },
+    "Carmen Díaz": {
+        remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg",
+        local: "/djs/carmen_diaz.jpg"
+    },
+    "Xavier Valiño": {
+        remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ffna010eanr12mf1o5m1dtjbi2a.jpg",
+        local: "/djs/xavier_valino.jpg"
+    },
+    "Tony Besa": {
+        remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg",
+        local: "/djs/tony_besa.png"
+    }
+};
+
+function getDjPhotoSources(djName, fallbackPath) {
+    if (djPhotoMap[djName]) {
+        return djPhotoMap[djName];
+    }
+    return {
+        remote: fallbackPath || "/logo.png",
+        local: "/logo.png"
+    };
+}
+
+function handleCoverImgError(img) {
+    if (!img) return;
+    var fallback = img.getAttribute("data-fallback");
+    if (fallback && img.src !== fallback && !img.src.endsWith(fallback)) {
+        img.src = fallback;
+        img.removeAttribute("data-fallback");
+        return;
+    }
+    if (!img.src.endsWith("/logo.png") && !img.src.endsWith("logo.png")) {
+        img.src = "/logo.png";
+    }
+}
+window.handleCoverImgError = handleCoverImgError;
+
 // Tabla de Programación Oficial de Inolvidable FM Canarias (Extraída de inolvidablefm.es/#programas)
 var officialWeeklySchedule = {
     // 0 = Domingo, 1 = Lunes, 2 = Martes, 3 = Miércoles, 4 = Jueves, 5 = Viernes, 6 = Sábado
     1: [ // LUNES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
-        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "djs/michael_ramirez.jpg" },
-        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "djs/juan_carlos_santome.jpg" },
-        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "djs/jose_ibanez.jpg" },
-        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "djs/jaime_falcon.png" },
-        { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "djs/carmen_diaz.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
+        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
+        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
+        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
+        { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
     ],
     2: [ // MARTES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
-        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "djs/michael_ramirez.jpg" },
-        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "djs/juan_carlos_santome.jpg" },
-        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "djs/jose_ibanez.jpg" },
-        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "djs/jaime_falcon.png" },
-        { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "djs/carmen_diaz.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
+        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
+        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
+        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
+        { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
     ],
     3: [ // MIÉRCOLES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
-        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "djs/michael_ramirez.jpg" },
-        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "djs/juan_carlos_santome.jpg" },
-        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "djs/jose_ibanez.jpg" },
-        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "djs/jaime_falcon.png" },
-        { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "djs/carmen_diaz.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
+        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
+        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
+        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
+        { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
     ],
     4: [ // JUEVES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
-        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "djs/michael_ramirez.jpg" },
-        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "djs/juan_carlos_santome.jpg" },
-        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "djs/jose_ibanez.jpg" },
-        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "djs/jaime_falcon.png" },
-        { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "djs/carmen_diaz.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
+        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
+        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
+        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
+        { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
     ],
     5: [ // VIERNES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
-        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "djs/michael_ramirez.jpg" },
-        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "djs/juan_carlos_santome.jpg" },
-        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "djs/jose_ibanez.jpg" },
-        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "djs/jaime_falcon.png" },
-        { start: "21:00", end: "22:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "djs/carmen_diaz.jpg" },
-        { start: "22:00", end: "23:00", show: "Club 958", dj: "Tony Besa", title: "Radio DJ & Especialista Música Llenapistas", photo: "djs/tony_besa.png" },
-        { start: "23:00", end: "01:00", show: "Inolvidables para Bailar", dj: "Emisión Automática", title: "Selección Bailable de Fin de Semana", photo: "logo.png" }
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
+        { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
+        { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
+        { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
+        { start: "21:00", end: "22:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
+        { start: "22:00", end: "23:00", show: "Club 958", dj: "Tony Besa", title: "Radio DJ & Especialista Música Llenapistas", photo: "/djs/tony_besa.png" },
+        { start: "23:00", end: "01:00", show: "Inolvidables para Bailar", dj: "Emisión Automática", title: "Selección Bailable de Fin de Semana", photo: "/logo.png" }
     ],
     6: [ // SÁBADO
-        { start: "01:00", end: "07:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
-        { start: "07:00", end: "11:00", show: "Lo Mejor del Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "djs/michael_ramirez.jpg" },
-        { start: "11:00", end: "17:00", show: "Fórmula Weekend", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "djs/jaime_falcon.png" },
-        { start: "17:00", end: "22:00", show: "Fórmula Weekend", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "djs/juan_carlos_santome.jpg" },
-        { start: "22:00", end: "23:00", show: "Funkytown", dj: "Jaime Falcón", title: "Radio DJ & Creador de Funkytown", photo: "djs/jaime_falcon.png" },
-        { start: "23:00", end: "01:00", show: "Inolvidables para Bailar", dj: "Emisión Automática", title: "Selección Bailable de Fin de Semana", photo: "logo.png" }
+        { start: "01:00", end: "07:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "07:00", end: "11:00", show: "Lo Mejor del Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
+        { start: "11:00", end: "17:00", show: "Fórmula Weekend", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
+        { start: "17:00", end: "22:00", show: "Fórmula Weekend", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
+        { start: "22:00", end: "23:00", show: "Funkytown", dj: "Jaime Falcón", title: "Radio DJ & Creador de Funkytown", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
+        { start: "23:00", end: "01:00", show: "Inolvidables para Bailar", dj: "Emisión Automática", title: "Selección Bailable de Fin de Semana", photo: "/logo.png" }
     ],
     0: [ // DOMINGO
-        { start: "01:00", end: "07:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
-        { start: "07:00", end: "11:00", show: "Lo Mejor del Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "djs/michael_ramirez.jpg" },
-        { start: "11:00", end: "15:00", show: "Fórmula Weekend", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "djs/jose_ibanez.jpg" },
-        { start: "15:00", end: "18:00", show: "Fórmula Weekend", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "djs/juan_carlos_santome.jpg" },
-        { start: "18:00", end: "22:00", show: "Fórmula Weekend", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "djs/jaime_falcon.png" },
-        { start: "22:00", end: "23:00", show: "Pase Privado", dj: "Xavier Valiño", title: "Periodista & Crítico de Pop y Rock", photo: "djs/xavier_valino.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
+        { start: "01:00", end: "07:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "07:00", end: "11:00", show: "Lo Mejor del Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
+        { start: "11:00", end: "15:00", show: "Fórmula Weekend", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
+        { start: "15:00", end: "18:00", show: "Fórmula Weekend", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
+        { start: "18:00", end: "22:00", show: "Fórmula Weekend", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
+        { start: "22:00", end: "23:00", show: "Pase Privado", dj: "Xavier Valiño", title: "Periodista & Crítico de Pop y Rock", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ffna010eanr12mf1o5m1dtjbi2a.jpg" },
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
     ]
 };
 
@@ -107,49 +163,49 @@ var radioDjs = [
         title: "Radio DJ & Conductor del Morning",
         program: "MORNING INOLVIDABLE",
         schedule: "Lunes a Viernes • 05:00 a 11:00 h",
-        photo: "djs/michael_ramirez.jpg"
+        photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg"
     },
     {
         name: "Juan Carlos Santomé",
         title: "Radio DJ & Coordinador Musical",
         program: "FÓRMULA INOLVIDABLE",
         schedule: "Lunes a Viernes • 11:00 a 15:00 h",
-        photo: "djs/juan_carlos_santome.jpg"
+        photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg"
     },
     {
         name: "José Ibáñez",
         title: "Radio DJ & Conductor de El Prime Time",
         program: "EL PRIME TIME DEL ATASCO",
         schedule: "Lunes a Viernes • 15:00 a 17:00 h",
-        photo: "djs/jose_ibanez.jpg"
+        photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg"
     },
     {
         name: "Jaime Falcón",
         title: "Radio DJ & Especialista Soul/Funk",
         program: "EDICIÓN TARDE & FUNKYTOWN",
         schedule: "Lunes a Sábado • 17:00 a 21:00 h",
-        photo: "djs/jaime_falcon.png"
+        photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png"
     },
     {
         name: "Carmen Díaz",
         title: "Radio DJ & Conductora de Colección",
         program: "INOLVIDABLES DE COLECCIÓN",
         schedule: "Lunes a Viernes • 21:00 a 23:00 h",
-        photo: "djs/carmen_diaz.jpg"
+        photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg"
     },
     {
         name: "Tony Besa",
         title: "Radio DJ & Especialista Música Llenapistas",
         program: "CLUB 958",
         schedule: "Viernes • 22:00 a 23:00 h",
-        photo: "djs/tony_besa.png"
+        photo: "/djs/tony_besa.png"
     },
     {
         name: "Xavier Valiño",
         title: "Periodista & Crítico de Pop y Rock",
         program: "PASE PRIVADO",
         schedule: "Domingo • 22:00 a 23:00 h",
-        photo: "djs/xavier_valino.jpg"
+        photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ffna010eanr12mf1o5m1dtjbi2a.jpg"
     }
 ];
 
@@ -515,7 +571,10 @@ function updateLiveDjMetadata() {
             if (coverImgEl) {
                 coverImgEl.style.opacity = "0.3";
                 setTimeout(function() {
-                    coverImgEl.src = liveData.photo;
+                    var sources = getDjPhotoSources(liveData.dj, liveData.photo);
+                    coverImgEl.setAttribute("data-fallback", sources.local);
+                    coverImgEl.onerror = function() { handleCoverImgError(this); };
+                    coverImgEl.src = sources.remote;
                     coverImgEl.alt = liveData.dj + " - " + liveData.show;
                     coverImgEl.style.opacity = "1";
                 }, 150);
@@ -537,7 +596,10 @@ function updateLiveDjMetadata() {
     if (coverImgEl) {
         coverImgEl.style.opacity = "0.3";
         setTimeout(function() {
-            coverImgEl.src = dj.photo;
+            var sources = getDjPhotoSources(dj.name, dj.photo);
+            coverImgEl.setAttribute("data-fallback", sources.local);
+            coverImgEl.onerror = function() { handleCoverImgError(this); };
+            coverImgEl.src = sources.remote;
             coverImgEl.alt = "Foto de " + dj.name + " - Radio DJ Inolvidable FM";
             coverImgEl.style.opacity = "1";
         }, 150);
