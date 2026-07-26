@@ -1,0 +1,2404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1">
+    <meta name="description" content="La mejor radio de grandes éxitos desde los '50 hasta la actualidad, y con la selección más amplia. Desbloquea tus recuerdos con nosotros.">
+    <meta name="keywords" content="inolvidable,radio,fm,oldies,goldisc,flashtime,mogollon,fiesta,60,70,80,90,00,50,DAB+">
+    <meta name="author" content="Web Las Palmas">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#e14539">
+
+    <!-- No inventa teléfonos sin permiso -  iOS -->
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Título página -->
+    <title>Inolvidable FM</title>
+
+    <!-- Estilos clásicos -->
+    <link rel="stylesheet" href="/template/estandar/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS plugins -->
+    <link href="/template/estandar/css/jquery.bxslider.css" rel="stylesheet">
+    <link href="/template/estandar/css/camera.css" rel="stylesheet">
+    <link href="/template/estandar/css/audio4_html5.css" rel="stylesheet">
+    <link href="/template/estandar/css/mediaelementplayer.css" rel="stylesheet">
+    <link href="/template/estandar/css/slick.css" rel="stylesheet">
+    <link href="/template/estandar/css/slick-theme.css" rel="stylesheet">
+    <link href="/template/estandar/css/animate.css" rel="stylesheet">
+    <link href="/template/estandar/css/swipebox.min.css" rel="stylesheet">
+
+    <!-- Sidebar -->
+    <link rel="stylesheet" href="/template/estandar/css/simple-sidebar.css">
+
+    <!-- sweetalert 2 -->
+    <script src="/template/estandar/js/jquery.js"></script>
+    <script src="/template/estandar/js/sweetalert2.all.js"></script>
+
+    <!-- CSS generico -->
+    <link rel="stylesheet" href="/template/estandar/style.css" type="text/css" media="screen" />
+
+    <link rel="shortcut icon" href="/template/estandar/icons/favicon.ico?v=2" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/template/estandar/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/template/estandar/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/template/estandar/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/template/estandar/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/template/estandar/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/template/estandar/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/template/estandar/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/template/estandar/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/template/estandar/icons/apple-touch-icon-180x180.png" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55685829-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-55685829-2');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8648545986167484"
+        crossorigin="anonymous"></script>
+
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="6g3h53KnB8OMlgLybGVP0Q" async></script>
+</head>
+
+<body class="onepage">
+
+    <div id="load"></div>
+
+    <header>
+        <!-- Cargar pagina primero -->
+        <div id="main">
+            <div id="home">
+                                    <div class="logo3_wrapper animated hidden-sm hidden-xs" data-animation="fadeInDown"
+                        data-animation-delay="1200">
+                        <a href="#home" class="logo3 scroll-to">
+                            <img src="/cmsAdmin/uploads/o_1cip71di11qji1q9jcsoai11pgoa.png" alt=""
+                                class="img-responsive">
+                        </a>
+                    </div>
+
+                    <div class="add1 add2 clearfix">
+                        <div class="dropdown dropdown1">
+                            <div class="wrapper-flex">
+                                <p class="sintoniza">INOLVIDABLE FM "LA MÚSICA DE TU VIDA"  </p>
+                                                                                                    <div class="redes">
+                                        <a href="https://us7.streamingpulse.com/3383/index.php" target="_blank">
+                                            <div class="circulo wrapper-flex">
+                                                <i class="fa fa-play"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                                                    <div class="redes">
+                                        <a href="https://www.facebook.com/inolvidablefmradio/" target="_blank">
+                                            <div class="circulo wrapper-flex">
+                                                <i class="fa fa-facebook"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                                                    <div class="redes">
+                                        <a href="https://www.instagram.com/inolvidablefmradio" target="_blank">
+                                            <div class="circulo wrapper-flex">
+                                                <i class="fa fa-instagram"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slider_wrapper">
+                        <div class="">
+                            <div id="slider_inner" class="clearfix">
+                                <div id="slider" class="clearfix">
+                                    <div id="camera_wrap">
+                                                                                    <div data-src="/cmsAdmin/uploads/o_1cip6t11q652j9u102t165e1htge.jpg">
+                                                <div class="camera_caption fadeFromLeft nav1">
+                                                    <div class="txt1 txt">LA MUSICA</div>
+                                                    <div class="txt2 txt">DE TU VIDA</div>
+                                                    <div class="txt3 txt"></div>
+                                                    <div class="txt4"></div>
+                                                                                                            <div class="txt5 menu_bot"><a target="_blank" href="https://wa.link/ppz2tp"
+                                                                class="btn-default btn-menu btn0">ANUNCIATE</a></div>
+                                                                                                    </div>
+                                            </div>
+                                                                                    <div data-src="/cmsAdmin/uploads/o_1ctg2pbdnvkf1k9qob41mv21cta.jpg">
+                                                <div class="camera_caption fadeFromLeft nav1">
+                                                    <div class="txt1 txt">Los éxitos de las </div>
+                                                    <div class="txt2 txt">últimas décadas</div>
+                                                    <div class="txt3 txt"></div>
+                                                    <div class="txt4"></div>
+                                                                                                            <div class="txt5 menu_bot"><a target="_blank" href="https://wa.link/6z9d4p"
+                                                                class="btn-default btn-menu btn0">PETICIONES</a></div>
+                                                                                                    </div>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                                                            <div class="song1_wrapper animated" data-animation="fadeInUp" data-animation-delay="1200">
+                            <div class="container">
+                                <div class="audio4_html5">
+                                    <audio id="audio4_html5_white" class="liveRadio" preload="metadata">
+                                        <div class="xaudioplaylist">
+                                            <ul>
+                                                <li class="xradiostream">https://de4.streamingpulse.com/ssl/inolvidablefm</li>
+                                                <li class="xcategory">rock;pop;</li>
+                                                <li class="xstation">Inolvidable FM</li>
+                                                <li class="xradiostream"></li>
+                                                <!-- IceCast -->
+                                            </ul>
+                                        </div>
+                                        Tu navegador no es compatible o está obsoleto. Por favor, use
+                                        <a href="https://www.google.com/intl/en/chrome/browser/">Chrome Browser</a>
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                            </div>
+
+            <!-- Menu -->
+                            <div id="top1">
+                    <div class="top2_wrapper" id="top2">
+                        <div class="container">
+                            <div class="top2 clearfix">
+
+                                <div class="menu_wrapper">
+
+                                    <div class="navbar navbar_ navbar-default">
+
+                                        <div class="navbar-brand hidden-lg hidden-md">
+                                            <a href="#home" class="logo3 scroll-to">
+                                                <img src="/cmsAdmin/uploads/o_1d1go6otdb10o2o8lm1v6010dha.png" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                        </div>
+
+                                        <button type="button" class="navbar-toggle right-toggle collapsed"
+                                            data-toggle="collapse" data-target=".navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <div class="navbar-collapse navbar-left navbar-collapse_ collapse">
+                                            <ul class="nav navbar-nav navbar-left">
+                                                                                                    <li>
+                                                        <a href="#programacion">
+                                                            PROGRAMACIÓN                                                        </a>
+                                                    </li>
+
+                                                                                                                                                    <li>
+                                                        <a href="#radiodj">
+                                                            RADIO DJ'S                                                        </a>
+                                                    </li>
+
+                                                                                                                                                                                                    <li>
+                                                        <a href="#eventos">
+                                                            EVENTOS                                                        </a>
+                                                    </li>
+
+                                                                                                                                                    <li>
+                                                        <a href="#podcast">
+                                                            PODCAST                                                        </a>
+                                                    </li>
+
+                                                                                                                                                    <li>
+                                                        <a href="#eshop">
+                                                            TIENDA                                                        </a>
+                                                    </li>
+
+                                                                                                                                                    <li>
+                                                        <a href="#contacta">
+                                                            CONTACTAR                                                        </a>
+                                                    </li>
+
+                                                
+                                            </ul>
+                                        </div>
+
+                                        <div class="reproductor audio4_html5 whiteControllers relative">
+                                            <div class="AudioControls">
+                                                <a id="play" class="consolAudio" title="Play/Pause"
+                                                    style="top: 29px; left: -33px; display: block;"></a>
+                                            </div>
+                                            <div class="titulos">
+                                                <div class="title">INOLVIDABLE FM</div>
+                                                <div class="directo">EN DIRECTO</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    </div>
+    </header><form id="paginacion">
+    <input name="paginas_totales" id="paginas_totales" type="hidden" value="0" />
+    <input name="pagina_actual" id="pagina_actual" type="hidden" value="0" />
+</form>
+
+
+
+<section id="programacion" class="">
+
+    <div class="container">
+
+        <div class="publicidad">
+            <a href="" target="_blank">
+                <img src="" alt="">
+            </a>
+
+        </div>
+
+        <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="100">
+            NUESTRA PROGRAMACIÓN <b>INOLVIDABLE FM "LA MÚSICA DE TU VIDA"  </b></div>
+        <div class="separa-10"></div>
+        <div class="hr-theme-slash-2 animated" data-animation="fadeInUp" data-animation-delay="200">
+            <div class="hr-line"></div>
+            <div class="hr-icon"><img src="/template/estandar/images/svg/micro.svg" alt=""></div>
+            <div class="hr-line"></div>
+        </div>
+        <div class="title2 animated" data-animation="fadeInUp" data-animation-delay="300">
+            INOLVIDABLE FM</div>
+
+        <div class="separa-50"></div>
+
+        <div class="tabla">
+
+
+
+            <table class="table animated" data-animation="fadeInUp" data-animation-delay="500">
+
+                <thead>
+                    <tr>
+                        <th>DÍAS</th>
+                        <th>HORAS</th>
+                        <th>PROGRAMA</th>
+                        <th class="hidden-xs">DISK JOCKEY</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    
+
+                        <tr
+                            class="programa_oculto">
+                            <th>Domingo</th>
+                            <td>01:00 a 07:00</td>
+                            <td>Fórmula Inolvidable Noche</td>
+                            <td class="hidden-xs"></td>
+                        </tr>
+
+                    
+
+                        <tr
+                            class="programa_oculto">
+                            <th>Domingo</th>
+                            <td>07:00 a 11:00</td>
+                            <td>Lo Mejor del Morning Inolvidable </td>
+                            <td class="hidden-xs">Michael Ramírez</td>
+                        </tr>
+
+                    
+
+                        <tr
+                            class="actual">
+                            <th>Domingo</th>
+                            <td>11:00 a 15:00</td>
+                            <td>Fórmula Weekend</td>
+                            <td class="hidden-xs">José Ibáñez</td>
+                        </tr>
+
+                    
+
+                        <tr
+                            class="">
+                            <th>Domingo</th>
+                            <td>15:00 a 18:00</td>
+                            <td>Fórmula Weekend</td>
+                            <td class="hidden-xs">Juan Carlos Santomé</td>
+                        </tr>
+
+                    
+
+                        <tr
+                            class="">
+                            <th>Domingo</th>
+                            <td>18:00 a 22:00</td>
+                            <td>Fórmula Weekend</td>
+                            <td class="hidden-xs">Jaime Falcón</td>
+                        </tr>
+
+                    
+
+                        <tr
+                            class="">
+                            <th>Domingo</th>
+                            <td>22:00 a 23:00</td>
+                            <td>Pase Privado</td>
+                            <td class="hidden-xs">Xavier Valiño</td>
+                        </tr>
+
+                    
+
+                        <tr
+                            class="">
+                            <th>Domingo</th>
+                            <td>23:00 a 01:00</td>
+                            <td>Baladas Inolvidables</td>
+                            <td class="hidden-xs"></td>
+                        </tr>
+
+                    
+                            <tr class="programa_oculto">
+                                <th>Lunes</th>
+                                <td>01:00 a 05:00</td>
+                                <td>Fórmula Inolvidable Noche</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Lunes</th>
+                                <td>05:00 a 11:00</td>
+                                <td>Morning Inolvidable</td>
+                                <td class="hidden-xs">Michael Ramírez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Lunes</th>
+                                <td>11:00 a 15:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Juan Carlos Santomé</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Lunes</th>
+                                <td>15:00 a 17:00</td>
+                                <td>Prime Time del Atasco</td>
+                                <td class="hidden-xs">José Ibáñez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Lunes</th>
+                                <td>17:00 a 21:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Jaime Falcón</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Lunes</th>
+                                <td>21:00 a 23:00</td>
+                                <td>Inolvidables de Colección</td>
+                                <td class="hidden-xs"> Carmen Díaz</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Lunes</th>
+                                <td>23:00 a 01:00</td>
+                                <td>Baladas Inolvidables</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Martes</th>
+                                <td>01:00 a 05:00</td>
+                                <td>Fórmula Inolvidable Noche</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Martes</th>
+                                <td>05:00 a 11:00</td>
+                                <td>Morning Inolvidable</td>
+                                <td class="hidden-xs">Michael Ramírez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Martes</th>
+                                <td>11:00 a 15:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Juan Carlos Santomé</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Martes</th>
+                                <td>15:00 a 17:00</td>
+                                <td>Prime Time del Atasco</td>
+                                <td class="hidden-xs">José Ibáñez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Martes</th>
+                                <td>17:00 a 21:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Jaime Falcón</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Martes</th>
+                                <td>21:00 a 23:00</td>
+                                <td>Inolvidables de Colección </td>
+                                <td class="hidden-xs"> Carmen Díaz</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Martes</th>
+                                <td>23:00 a 01:00</td>
+                                <td>Baladas Inolvidables</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Miércoles</th>
+                                <td>01:00 a 05:00</td>
+                                <td>Fórmula Inolvidable Noche</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Miércoles</th>
+                                <td>05:00 a 11:00</td>
+                                <td>Morning Inolvidable</td>
+                                <td class="hidden-xs">Michael Ramírez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Miércoles</th>
+                                <td>11:00 a 15:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Juan Carlos Santomé</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Miércoles</th>
+                                <td>15:00 a 17:00</td>
+                                <td>Prime Time del Atasco</td>
+                                <td class="hidden-xs">José Ibáñez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Miércoles</th>
+                                <td>17:00 a 21:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Jaime Falcón</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Miércoles</th>
+                                <td>21:00 a 23:00</td>
+                                <td>Inolvidables de Colección</td>
+                                <td class="hidden-xs"> Carmen Díaz</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Miércoles</th>
+                                <td>23:00 a 01:00</td>
+                                <td>Baladas Inolvidables</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Jueves</th>
+                                <td>01:00 a 05:00</td>
+                                <td>Fórmula Inolvidable Noche</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Jueves</th>
+                                <td>05:00 a 11:00</td>
+                                <td>Morning Inolvidable</td>
+                                <td class="hidden-xs">Michael Ramírez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Jueves</th>
+                                <td>11:00 a 15:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Juan Carlos Santomé</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Jueves</th>
+                                <td>15:00 a 17:00</td>
+                                <td>Prime Time del Atasco</td>
+                                <td class="hidden-xs">José Ibáñez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Jueves</th>
+                                <td>17:00 a 21:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Jaime Falcón</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Jueves</th>
+                                <td>21:00 a 23:00</td>
+                                <td>Inolvidables de Colección</td>
+                                <td class="hidden-xs"> Carmen Díaz</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Jueves</th>
+                                <td>23:00 a 01:00</td>
+                                <td>Baladas Inolvidables</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Viernes</th>
+                                <td>01:00 a 07:00</td>
+                                <td>Fórmula Inolvidable Noche</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Viernes</th>
+                                <td>05:00 a 11:00</td>
+                                <td>Morning Inolvidable</td>
+                                <td class="hidden-xs">Michael Ramírez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Viernes</th>
+                                <td>11:00 a 15:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Juan Carlos Santomé</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Viernes</th>
+                                <td>15:00 a 17:00</td>
+                                <td>Prime Time del Atasco</td>
+                                <td class="hidden-xs">José Ibáñez</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Viernes</th>
+                                <td>17:00 a 21:00</td>
+                                <td>Fórmula Inolvidable</td>
+                                <td class="hidden-xs">Jaime Falcón</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Viernes</th>
+                                <td>21:00 a 22:00</td>
+                                <td>Inolvidables de Colección</td>
+                                <td class="hidden-xs">Carmen Díaz</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Viernes</th>
+                                <td>22:00 a 23:00</td>
+                                <td>Club 958</td>
+                                <td class="hidden-xs">Tony Besa</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Viernes</th>
+                                <td>23:00 a 01:00</td>
+                                <td>Inolvidables para Bailar</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Sábado</th>
+                                <td>01:00 a 07:00</td>
+                                <td>Fórmula Inolvidable Noche</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Sábado</th>
+                                <td>07:00 a 11:00</td>
+                                <td>Lo Mejor del Morning Inolvidable</td>
+                                <td class="hidden-xs">Michael Ramírez </td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Sábado</th>
+                                <td>11:00 a 17:00</td>
+                                <td>Fórmula Weekend</td>
+                                <td class="hidden-xs">Jaime Falcón</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Sábado</th>
+                                <td>17:00 a 22:00</td>
+                                <td>Fórmula Weekend</td>
+                                <td class="hidden-xs">Juan Carlos Santomé</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Sábado</th>
+                                <td>22:00 a 23:00</td>
+                                <td>Funkytown</td>
+                                <td class="hidden-xs">Jaime Falcón</td>
+                            </tr>
+
+                        
+                            <tr class="programa_oculto">
+                                <th>Sábado</th>
+                                <td>23:00 a 01:00</td>
+                                <td>Inolvidables para Bailar</td>
+                                <td class="hidden-xs"></td>
+                            </tr>
+
+                        
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="separa-30"></div>
+        <div class="boton_programacion text-center animated" data-animation="fadeInUp" data-animation-delay="1500">
+            <a href="#programas" class="bnt btn_programas">VER TODA LA PROGRAMACIÓN</a>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="radiodj" class="">
+    <div class="container">
+        <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="100">
+            LAS VOCES QUE TE ACOMPAÑAN <b>INOLVIDABLE FM "LA MÚSICA DE TU VIDA"  </b></div>
+        <div class="separa-10"></div>
+
+        <div class="title2 animated" data-animation="fadeInUp" data-animation-delay="300">CONOCE A NUESTROS DJ'S        </div>
+
+        <div class="title3 animated" data-animation="fadeInUp" data-animation-delay="500">Inolvidable FM ha seleccionado cuidadosamente las voces que acompañan  la música de tu vida        </div>
+
+    </div>
+
+    <div class="slick-slider-wrapper">
+        <div class="container">
+            <div class="slick-slider slider center">
+
+                
+                    <div>
+                        <a href="#" class="boton_modal no-modal" data-toggle="modal"
+                            data-target="#carmen-diaz">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+
+                                    <div class="trapezoid">
+                                        <span>Carmen Díaz</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <div>
+                        <a href="#" class="boton_modal no-modal" data-toggle="modal"
+                            data-target="#jose-ibanez">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+
+                                    <div class="trapezoid">
+                                        <span>José Ibáñez</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <div>
+                        <a href="#" class="boton_modal no-modal" data-toggle="modal"
+                            data-target="#xavier-valino">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1ffna010eanr12mf1o5m1dtjbi2a.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+
+                                    <div class="trapezoid">
+                                        <span>Xavier Valiño</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <div>
+                        <a href="#" class="boton_modal no-modal" data-toggle="modal"
+                            data-target="#juan-carlos-santome">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+
+                                    <div class="trapezoid">
+                                        <span>Juan Carlos Santomé</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <div>
+                        <a href="#" class="boton_modal no-modal" data-toggle="modal"
+                            data-target="#jaime-falcon">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+
+                                    <div class="trapezoid">
+                                        <span>Jaime Falcón</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <div>
+                        <a href="#" class="boton_modal no-modal" data-toggle="modal"
+                            data-target="#michael-ramirez">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+
+                                    <div class="trapezoid">
+                                        <span>Michael Ramírez</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <div>
+                        <a href="#" class="boton_modal no-modal" data-toggle="modal"
+                            data-target="#tony-besa">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1cirgcqcmd3jkjud5e116p17m7a.png" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+
+                                    <div class="trapezoid">
+                                        <span>Tony Besa</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                <!-- Repeticion del slider-->
+
+                                    <div>
+                        <a href="#" class="boton_modal" data-toggle="modal" data-target="#carmen-diaz">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+                                    <div class="trapezoid">
+                                        <span>Carmen Díaz</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div>
+                        <a href="#" class="boton_modal" data-toggle="modal" data-target="#jose-ibanez">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+                                    <div class="trapezoid">
+                                        <span>José Ibáñez</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div>
+                        <a href="#" class="boton_modal" data-toggle="modal" data-target="#xavier-valino">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1ffna010eanr12mf1o5m1dtjbi2a.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+                                    <div class="trapezoid">
+                                        <span>Xavier Valiño</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div>
+                        <a href="#" class="boton_modal" data-toggle="modal" data-target="#juan-carlos-santome">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+                                    <div class="trapezoid">
+                                        <span>Juan Carlos Santomé</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div>
+                        <a href="#" class="boton_modal" data-toggle="modal" data-target="#jaime-falcon">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+                                    <div class="trapezoid">
+                                        <span>Jaime Falcón</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div>
+                        <a href="#" class="boton_modal" data-toggle="modal" data-target="#michael-ramirez">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+                                    <div class="trapezoid">
+                                        <span>Michael Ramírez</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div>
+                        <a href="#" class="boton_modal" data-toggle="modal" data-target="#tony-besa">
+                            <div class="slick-slider-inner">
+                                <figure><img src="/cmsAdmin/uploads/o_1cirgcqcmd3jkjud5e116p17m7a.png" alt="" class="img-responsive"></figure>
+                                <div class="caption">
+                                    <div class="trapezoid">
+                                        <span>Tony Besa</span>
+                                    </div>
+                                    <div class="borde_inferior"></div>
+                                </div>
+                                <div class="slick-slider-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="flechas-slick visible-xs ">
+        <div class="wrapper-flex">
+            <img src="/template/estandar/images/svg/long-left.svg" alt="">
+            <img src="/template/estandar/images/svg/long-right.svg" alt="">
+        </div>
+    </div>
+
+</section>
+
+<section id="hits" class="hidden">
+    <div class="container">
+        <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="100">
+            HECHA PARA TI <b>INOLVIDABLE FM "LA MÚSICA DE TU VIDA"  </b></div>
+        <div class="separa-10"></div>
+
+        <div class="title2 animated" data-animation="fadeInUp" data-animation-delay="300">NUESTRA HIT PARADES        </div>
+
+        <div class="title3 animated" data-animation="fadeInUp" data-animation-delay="500">Una selección única para recordar los éxitos de los últimos cuarenta años basada en listas de ventas y popularidad en España        </div>
+
+        <div class="selector_hit animated" data-animation="fadeInRight" data-animation-delay="1000">
+
+
+
+            <select class="form-control hit_selector" name="fecha" id="fecha">
+                <option value="">Selecciona Año</option>
+
+                
+                    <option value="1960">1960</option>
+
+                
+                    <option value="1997">1997</option>
+
+                
+                    <option value="1998">1998</option>
+
+                
+                    <option value="1999">1999</option>
+
+                
+                    <option value="2000">2000</option>
+
+                
+            </select>
+
+
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+        </div>
+
+        <div class="separa-50"></div>
+
+        <div class="lista_hits">
+
+            <div class="row" id="productos">
+                <div class="loading text-center">
+                    <div class="separa-40"></div>
+                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+<section id="eventos" class="">
+
+    <div class="container">
+        <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="100">
+            NOS MOVEMOS POR TI <b>INOLVIDABLE FM "LA MÚSICA DE TU VIDA"  </b></div>
+        <div class="separa-10"></div>
+        <div class="hr-theme-slash-2 animated" data-animation="fadeInUp" data-animation-delay="200">
+            <div class="hr-line"></div>
+            <div class="hr-icon"><img src="/template/estandar/images/svg/micro.svg" alt=""></div>
+            <div class="hr-line"></div>
+        </div>
+        <div class="title2 animated" data-animation="fadeInUp" data-animation-delay="300">
+            NUESTROS ÚLTIMOS EVENTOS</div>
+
+        <div class="separa-50"></div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Eventos</th>
+                    <th>Día del Evento</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1fg18egup1b5g1h8l16g41c4u1pe9a.jpg">INOLVIDABLE FM EN CONCIERTO CON LA GUARDIA + GUS JACKSON</a></td>
+                        <td>3 OCTUBRE 2021 - AFORO LIMITADO - Reservas en www.reservaonline.es</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1darc7hjd7mfhdv199gpl31j7ja.jpg">LPA MUSIC & BEER FESTIVAL Inolvidable FM Emisora Oficial</a></td>
+                        <td>7 AL 9 DE JUNIO 2019 VENTA TICKETS www.entrees.es</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1d9le7hji38k7sd1fmd1jqfafla.jpg">GUARANA  CHESTER MELONERAS INOLVIDABLE FM </a></td>
+                        <td>31 MAYO 2019 VENTA DE TICKETS www.mastaquilla.com</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1d9ldvjpf1min1pgb15i810lq1ndma.jpg">RUBÉN POZO & LICHIS CHESTER MELONERAS INOLVIDABLE FM </a></td>
+                        <td>24 MAYO 2019 VENTA DE TICKETS www.mastaquilla.com</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1d9ldp4ok4lv1is2ndorc91op4a.jpg">BURNING  CHESTER MELONERAS INOLVIDABLE FM </a></td>
+                        <td>17 MAYO 2019 VENTA DE TICKETS www.mastaquilla.com</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1d9lda71k1aff1p215tqcg21et0a.jpg">MIKEL ERENTXU  CHESTER MELONERAS INOLVIDABLE FM </a></td>
+                        <td>03 MAYO 2019 VENTA DE TICKETS www.mastaquilla.com</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1d97m44sj1mgf1ifs1cr35pn1nq9a.jpg">DANZA INVISIBLE  CHESTER MELONERAS INOLVIDABLE FM </a></td>
+                        <td>26 MAYO 2019 VENTA DE TICKETS  www.mastaquilla.com</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1d97mucld1blb1h2v1ia4kdbulfa.jpg">LA FRONTERA CHESTER MELONERAS INOLVIDABLE FM</a></td>
+                        <td>19 MAYO 2019 VENTA DE TICKETS www.mastaquilla.com</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1d97n6a7t9011k058dv16op1g42a.jpg">LA GUARDIA CHESTER MELONERAS INOLVIDABLE FM</a></td>
+                        <td>12 ABRIL 2019 VENTA DE TICKETS www.mastaquilla.com</td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><a class="swipebox" href="/cmsAdmin/uploads/o_1d97ncv5f5l5dfl1j655qi70ga.jpg">TENNESSEE CHESTER MELONERAS INOLVIDABLE FM</a></td>
+                        <td>5 MAYO 2019 VENTA DE TICKETS www.mastaquilla.com</td>
+                    </tr>
+
+                
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="separa-50"></div>
+
+</section>
+
+<section id="podcast" class="">
+    <div class="separa-50"></div>
+    <div class="separa-30"></div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-7">
+                <div class="title1 animated" data-animation="fadeInLeft" data-animation-delay="100">
+                    ESCÚCHANOS CUANDO LO DESEES <b>INOLVIDABLE FM "LA MÚSICA DE TU VIDA"  </b></div>
+                <div class="separa-10"></div>
+
+                <div class="title2 animated" data-animation="fadeInLeft" data-animation-delay="300">
+                    ÚLTIMOS PODCAST</div>
+
+                <div class="title3 animated" data-animation="fadeInLeft" data-animation-delay="500">
+                    Tus programas favoritos de Inolvidable FM para que los escuches cuando quieras y donde quieras.</div>
+
+                <div class="separa-40"></div>
+
+                <div class="boton_postcast text-center animated" data-animation="fadeInLeft" data-animation-delay="700">
+                    <a href="https://www.ivoox.com/escuchar-inolvidable-fm_nq_9259740_1.html" target="_blank"
+                        class="btn btn_podcast">¿QUIERES MÁS PODCAST?</a>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <div class="cuadro_post">
+                    <iframe src="https://www.ivoox.com/_ns_9259740_0_.html" width="100%"  height="440" ></iframe>                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="separa-50"></div>
+    <div class="separa-30"></div>
+</section>
+
+<section id="eshop" class="">
+
+    <div class="container">
+        <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="100">
+            LA MEJOR MÚSICA <b>INOLVIDABLE FM "LA MÚSICA DE TU VIDA"  </b></div>
+        <div class="separa-10"></div>
+
+        <div class="title2 animated" data-animation="fadeInUp" data-animation-delay="300">COMPRA NUESTROS DISCOS        </div>
+
+        <div class="title3 animated" data-animation="fadeInUp" data-animation-delay="500">Tus colecciones más inolvidables para regalar o regalarte,  5€ gasto de envío        </div>
+
+        <div class="separa-50"></div>
+        <div class="separa-30"></div>
+
+        <div class="row relative animated" data-animation="fadeInUp" data-animation-delay="900">
+
+
+            <div id="slider-prev"></div>
+
+            <div class="bxslider">
+
+                
+
+                    <div class="compa compa1">
+                        <div class="col-md-9 col-xs-12">
+
+                            <div class="flechas-tienda visible-xs ">
+                                <div class="wrapper-flex">
+                                    <img src="/template/estandar/images/svg/long-left.svg" alt="">
+                                    <img src="/template/estandar/images/svg/long-right.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="tienda">
+                                <div class="cuadro_tienda"
+                                    style="background-image: url('/template/estandar/images/DISCO.png')"></div>
+
+                                <div class="eshop_caratula"
+                                    style="background-image: url('/cmsAdmin/uploads/o_1cirm2rg6si4oo54lh1bnk1u1ea.jpg')"></div>
+                                <div class="eshop_cd" style="background-image: url('/cmsAdmin/uploads/o_1cirm2rg6si4oo54lh1bnk1u1ea.jpg')">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="best0 lista_cd">
+                                <div class="titulo_lista">
+                                    <h3><img src="/template/estandar/images/svg/micro.svg" alt=""> CD + DVD</h3>
+                                </div>
+                                <h3>10 años inolvidables</h3>
+                                <div class="best_list">
+                                                                                    <div class="clearfix">
+                                                    <div class="right">Mi gran Noche</div>
+                                                    <div class="left"><span>1</span>. Los Lola </div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Amigo</div>
+                                                    <div class="left"><span>2</span>. La Manzana de Newton feat Carlos Rodríguez</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Billie Jean</div>
+                                                    <div class="left"><span>3</span>. Javier Brichis</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Un beso y una Flor</div>
+                                                    <div class="left"><span>4</span>. Overbooking</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Mirala, Miralo</div>
+                                                    <div class="left"><span>5</span>. Lunati-K</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">You</div>
+                                                    <div class="left"><span>6</span>. Última Llave</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Eternal Flame</div>
+                                                    <div class="left"><span>7</span>. Swingstar</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Jailhouse Rock</div>
+                                                    <div class="left"><span>8</span>. Crash</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Nassau</div>
+                                                    <div class="left"><span>9</span>. Espacio Libre</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Mamma Mia</div>
+                                                    <div class="left"><span>10</span>.  Los Salvapantallas </div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Don`t Go</div>
+                                                    <div class="left"><span>11</span>. La Nada</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Last Dance</div>
+                                                    <div class="left"><span>12</span>. Ydennek & Madison</div>
+                                                </div>
+                                                                                                    <div class="clearfix">
+                                                        <div class="left red">y muchos más</div>
+                                                    </div>
+                                                
+                                </div>
+
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <div class="col-sm-6 col-xs-6">
+                                <h3 class="precio">15,95€</h3>
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                <form action="/" method="post" id="comp1">
+                                    <input type="hidden" name="producto" id="producto" value="1">
+                                    <input type="hidden" name="precio" id="precio" value="15,95">
+
+                                    <button type="submit" class="btn btn_comprar" name="checkout" value="paypal"
+                                        onclick="comprar_ahora();">COMPRAR</button>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                
+
+                    <div class="compa compa2">
+                        <div class="col-md-9 col-xs-12">
+
+                            <div class="flechas-tienda visible-xs ">
+                                <div class="wrapper-flex">
+                                    <img src="/template/estandar/images/svg/long-left.svg" alt="">
+                                    <img src="/template/estandar/images/svg/long-right.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="tienda">
+                                <div class="cuadro_tienda"
+                                    style="background-image: url('/template/estandar/images/DISCO.png')"></div>
+
+                                <div class="eshop_caratula"
+                                    style="background-image: url('/cmsAdmin/uploads/o_1d0ce1jfs25k10vkkdj82a1j5ha.png')"></div>
+                                <div class="eshop_cd" style="background-image: url('/cmsAdmin/uploads/o_1d0ce1jfs25k10vkkdj82a1j5ha.png')">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="best0 lista_cd">
+                                <div class="titulo_lista">
+                                    <h3><img src="/template/estandar/images/svg/micro.svg" alt=""> Inolvidable Disco - Doble CD</h3>
+                                </div>
+                                <h3>Una auténtica Fiesta</h3>
+                                <div class="best_list">
+                                                                                    <div class="clearfix">
+                                                    <div class="right">Yes sir, I can Boogie</div>
+                                                    <div class="left"><span>1</span>. Baccara</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">I Will Survive</div>
+                                                    <div class="left"><span>2</span>. Gloria Gaynor</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">I Love to Love</div>
+                                                    <div class="left"><span>3</span>. Tina Charles</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Ride on Time</div>
+                                                    <div class="left"><span>4</span>. Black Box</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">D.I.S.C.O.</div>
+                                                    <div class="left"><span>5</span>. Ottawan</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">On the road Again</div>
+                                                    <div class="left"><span>6</span>. Barrabas</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Knock on Wood</div>
+                                                    <div class="left"><span>7</span>. Ami Stewart</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Nice & Slow</div>
+                                                    <div class="left"><span>8</span>. Jesse Green</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Medley</div>
+                                                    <div class="left"><span>9</span>. Stars on 45</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Cuba</div>
+                                                    <div class="left"><span>10</span>. Gibson Brothers</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Let' s all Chant</div>
+                                                    <div class="left"><span>11</span>. Michael Zagger Band</div>
+                                                </div>
+                                                                                                <div class="clearfix">
+                                                    <div class="right">Saddle Up</div>
+                                                    <div class="left"><span>12</span>. David Christie</div>
+                                                </div>
+                                                                                                    <div class="clearfix">
+                                                        <div class="left red">y muchos más</div>
+                                                    </div>
+                                                
+                                </div>
+
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <div class="col-sm-6 col-xs-6">
+                                <h3 class="precio">15,95€</h3>
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                <form action="/" method="post" id="comp2">
+                                    <input type="hidden" name="producto" id="producto" value="2">
+                                    <input type="hidden" name="precio" id="precio" value="15,95">
+
+                                    <button type="submit" class="btn btn_comprar" name="checkout" value="paypal"
+                                        onclick="comprar_ahora();">COMPRAR</button>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                
+            </div>
+
+            <div id="slider-next"></div>
+
+        </div>
+
+        <div class="separa-50"></div>
+
+    </div>
+
+</section>
+
+<section id="contacta" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 levantar">
+                <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="100">
+                    Contáctanos Ahora  <b>INOLVIDABLE FM "LA MÚSICA DE TU VIDA"  </b></div>
+                <div class="separa-10"></div>
+
+                <div class="title2 animated" data-animation="fadeInUp" data-animation-delay="300">
+                    ¿NECESITAS CONTACTAR CON NOSOTROS?</div>
+
+                <div class="title3 animated" data-animation="fadeInUp" data-animation-delay="500">
+                    Envíanos tu pregunta, te contestaremos lo antes posible. Gracias.</div>
+
+                <div class="separa-50"></div>
+
+                <div class="contacto animated" data-animation="fadeInUp" data-animation-delay="700">
+
+
+                    <form action="/index.php" method="post">
+
+                        <input type="text" name="elbot" value="" class="ocultorobots">
+
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo">E-mail</label>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder=""
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" class="form-control" rows="3" required></textarea>
+                        </div>
+
+                        <div class="separa-30"></div>
+
+                        <div class="col-sm-6">
+                            <div class="captcha">
+                                <div class="g-recaptcha" data-sitekey="6LcBWGUUAAAAAMCCbdikv-Puy03FbdoLcZXVnuAY"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 condiciones">
+
+                            <input type="button" class="btn btn_enviar enviar" value="Enviar consulta"
+                                onclick="swal('Lo sentimos', 'Debes aceptar las condiciones', 'warning')">
+                            <input type="submit" class="btn btn_enviar enviar" name="enviar"
+                                value="Enviar consulta" style="display:none;">
+
+                            <br>
+
+                            <input type="checkbox"
+                                onclick="$(this).parent().find('.enviar').toggle();">&nbsp;Acepto el <a href="javascript:void(0)" data-toggle="modal" data-target="#aviso-legal">aviso legal</a> y la <a href="javascript:void(0)" data-toggle="modal" data-target="#politica-de-privacidad">política de privacidad</a>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <article class="zona_mapa animated" data-animation="fadeInRight" data-animation-delay="500">
+                                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.6885803803143!2d-15.419727348573065!3d28.15596708252294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc409551c38c0d39%3A0x3b24fde4cb5ff9e9!2sInolvidable%20FM!5e0!3m2!1ses!2ses!4v1669980123188!5m2!1ses!2ses"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Modal -->
+    <div class="modal modal_dj fade" id="carmen-diaz" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Carmen Díaz</h4>
+                </div>
+                <div class="modal-body">
+                    <p>La radio fue vocaci&oacute;n para esta granadina que ya de ni&ntilde;a grababa programas en su radiocassette. Amante del rock&acute;n&acute;roll de los 50&acute;s, de las chicas yeyes y de la est&eacute;tica retro, suele decir que naci&oacute; en la &eacute;poca equivocada. Siempre dispuesta a aprender y descubrir curiosidades de la historia de la m&uacute;sica, Carmen D&iacute;az llega a Inolvidable Fm para acompa&ntilde;arte cada noche en los &quot;Inolvidables de Colecci&oacute;n&quot;. Su mejor plan? Un concierto y cerveza fresquita!</p>
+                    <div class="separa-10"></div>
+                                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal_dj fade" id="jose-ibanez" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">José Ibáñez</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Nacido en Salamanca, sus pinitos radiof&oacute;nicos se producen all&iacute; con tan solo 15 a&ntilde;os, desde entonces siempre ha estado vinculado a la radio musical pero con amplia experiencia tambi&eacute;n en radio convencional.</p>
+
+<p>Pas&oacute; como coordinador por las principales radiof&oacute;rmulas nacionales, consiguiendo una perspectiva muy especial con respecto al gusto del oyente adulto.</p>
+
+<p>Ahora en Inolvidable te acompa&ntilde;a en &quot;El Prime Time Del Atasco&quot;, y te invita a disfrutar de la mejor m&uacute;sica de todos los tiempos, en una aventura musical que no podr&aacute;s dejar de escuchar, y de la que tienes que formar parte los domingos en la &quot;F&oacute;rmula Weekend&quot;.</p>
+                    <div class="separa-10"></div>
+                                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal_dj fade" id="xavier-valino" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Xavier Valiño</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Xavier Vali&ntilde;o Garc&iacute;a (Cospeito, Galicia) es un periodista y comentarista de pop y rock que viene colaborando desde hace a&ntilde;os en distintos medios de comunicaci&oacute;n espa&ntilde;oles cubriendo temas musicales, cinematogr&aacute;ficos y de viajes. Aun as&iacute;, lo dejar&iacute;a todo para surcar las aguas de islas lejanas en un peque&ntilde;o velero y ba&ntilde;arse desnudo bajo las estrellas.</p>
+
+<p>Esc&uacute;chalo los domingos&nbsp; en su &quot;Pase Privado&quot;&nbsp;</p>
+                    <div class="separa-10"></div>
+                                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal_dj fade" id="juan-carlos-santome" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Juan Carlos Santomé</h4>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align:justify">Radio DJ y Coordinador Musical de Inolvidable FM, Juan Carlos fu&eacute; el creador conceptual de la emisora y cada ma&ntilde;ana, su selecci&oacute;n musical te acompa&ntilde;a con su estilo m&aacute;s personal en Directo desde las 11. En lo personal Juan Carlos Santom&eacute; es una apasionado coleccionista de vinilos, y tiene una de las m&aacute;s importantes y extensas fonotecas de Espa&ntilde;a. Su pasi&oacute;n es viajar y se considera m&aacute;s americano que Aretha Franklin, y un consejo, si quieres invitar a Santom&eacute; a comer o cenar su plato favorito es Spaguetti Carbonara.</p>
+                    <div class="separa-10"></div>
+                                            <div class="text-center">
+                            <a href="https://www.ivoox.com/escuchar-online-inolvidable-fm_tw_88152_1.html" target="_blank" class="btn btn-default">Escuchar en Ivoox</a>
+                        </div>
+                                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal_dj fade" id="jaime-falcon" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Jaime Falcón</h4>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align:justify">Su pasi&oacute;n por las mezclas y el mundo de las discotecas le alza con el primer premio nacional de DJ&acute;s (1990) y le abre las puertas en el mundo de las comunicacion. Jaime te acompa&ntilde;a&nbsp; en la Edici&oacute;n Tarde de nuestra radiof&oacute;rmula&nbsp; y los s&aacute;bados con el programa especializado, &quot;Funkytown&quot;. Adem&aacute;s es uno de los Rado Djs con mayor profundo conocimiento del cat&aacute;logo musical de los ultimos 40 a&ntilde;os. La pasi&oacute;n por el Soul y el Funk le ha llevado a los principales escenarios de Festivales Especializados de Espa&ntilde;a. Su sue&ntilde;o es ver juntos en un concierto a Kool and the Gang y Earth Wind and Fire, y mata por una Hamburguesa con todas las salsas del mundo.</p>
+                    <div class="separa-10"></div>
+                                            <div class="text-center">
+                            <a href="https://www.mixcloud.com/jaime-falcón/" target="_blank" class="btn btn-default">Escuchar en Ivoox</a>
+                        </div>
+                                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal_dj fade" id="michael-ramirez" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Michael Ramírez</h4>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align:justify">Experiencia en Cadenas Nacionales, formaci&oacute;n en radio musical, conocimiento de los &uacute;ltimos 40 a&ntilde;os de m&uacute;sica y conductor en la actualidad del &quot;Morning Inolvidable&quot;. Adem&aacute;s durante la &uacute;ltima d&eacute;cada Michael Ramirez ha sido un referente en divulgaci&oacute;n sobre la m&uacute;sica House en Espa&ntilde;a y Estados Unidos llevando el estilo Adulthouse por los mejores beach clubs del mundo.&nbsp; Y.. por cierto, si quieres convencer a Michael de algo, ll&eacute;valo a un Restaurante Japon&eacute;s. ... o al Jameos Festival.&nbsp;</p>
+                    <div class="separa-10"></div>
+                                            <div class="text-center">
+                            <a href="https://www.ivoox.com/podcast-morning-inolvidable_sq_f1760087_1.html" target="_blank" class="btn btn-default">Escuchar en Ivoox</a>
+                        </div>
+                                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal_dj fade" id="tony-besa" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Tony Besa</h4>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align:justify">De sobra conocido en las principales cabinas de Canarias, Tony ha llevado el nombre de las islas por los mejores clubs del norte de Europa. En 2015&nbsp; se incorpora a Inolvidable FM con una propuesta especializada en m&uacute;sica de baile para dar as&iacute; comienzo a la programaci&oacute;n Weekend de la Radio. Club 958, combina la m&uacute;sica llenapistas de la &eacute;poca con novedades y entrevistas muy personales a los m&aacute;s importantes Djs del pa&iacute;s. Si quieres conectar con Tony Besa, apunta estas premisas Coches y Paella.</p>
+                    <div class="separa-10"></div>
+                                            <div class="text-center">
+                            <a href="https://www.ivoox.com/podcast-kiss-show-remember-tony-besa_sq_f1611935_1.html" target="_blank" class="btn btn-default">Escuchar en Ivoox</a>
+                        </div>
+                                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="1960" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">1960</h4>
+                </div>
+                <div class="modal-body">
+                                            <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cantante</th>
+                                    <th class="hidden-xs">Disco</th>
+                                    <th>Canción</th>
+                            </thead>
+                            <tbody>
+                                
+                                    <tr>
+                                        <td>Brenda Lee</td>
+                                        <td class="hidden-xs">Lorem ipsum</td>
+                                        <td>I´m Sorry</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Paul Anka</td>
+                                        <td class="hidden-xs">Lorem ipsum</td>
+                                        <td>Adam And Eva</td>
+                                    </tr>
+                                                                </tbody>
+                        </table>
+                                        </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="1997" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">1997</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Proximamente...</p>                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="1998" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">1998</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Proximamente...</p>                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="1999" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">1999</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Proximamente...</p>                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="2000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">2000</h4>
+                </div>
+                <div class="modal-body">
+                                            <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cantante</th>
+                                    <th class="hidden-xs">Disco</th>
+                                    <th>Canción</th>
+                            </thead>
+                            <tbody>
+                                
+                                    <tr>
+                                        <td></td>
+                                        <td class="hidden-xs"></td>
+                                        <td>Lou Bega - Mambo Nº 5</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td></td>
+                                        <td class="hidden-xs"></td>
+                                        <td>Christina Aguilera - Gene in a botle</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td></td>
+                                        <td class="hidden-xs"></td>
+                                        <td>Blondie - María</td>
+                                    </tr>
+                                                                </tbody>
+                        </table>
+                                        </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal -->
+
+<footer id="footer">
+
+    <div class="footer">
+        <div class="separa-50"></div>
+        <div class="container">
+            <div class="col-md-5 app">
+                <h2><span>App:</span> Llevanos siempre encima</h2>
+                <p>Inolvidable FM - Disponible en Google Play y App Store</p>
+
+                <div class="logos_app">
+                                            <a href="https://play.google.com/store/apps/details?id=com.inolvidable_fm.weblaspalmas" target="_blank"><img src="/cmsAdmin/uploads/o_1cj34b3suaq19o1arojjo1gf9b.png" alt=""></a>
+                                            <a href="https://itunes.apple.com/us/app/inolvidable-fm/id1320854217?mt=8" target="_blank"><img src="/cmsAdmin/uploads/o_1cj34b3suf2b17uip0s16mu18uac.png" alt=""></a>
+                                    </div>
+            </div>
+            <div class="col-md-3  col-sm-6 datos_web">
+                <h3>Datos Web</h3>
+
+                <p><a class="enlace-otros"  href='#' data-toggle='modal' data-target='#aviso-legal'>Aviso Legal</a></p><p><a class="enlace-otros"  href='#' data-toggle='modal' data-target='#politica-de-privacidad'>Política de Privacidad</a></p><p><a class="enlace-otros"  href='#' data-toggle='modal' data-target='#emisoras-asociadas'>Emisoras Asociadas</a></p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h3>Síguenos:</h3>
+                <div class="separa-10"></div>
+                <div class="redes_pie wrapper-flex left">
+
+                    
+                    <div class="redes redes_pie">
+
+                        
+                            <div>
+                                <a href="https://us7.streamingpulse.com/3383/index.php" target="_blank">
+                                    <div class="circulo wrapper-flex">
+                                        <i class="fa fa-play"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                        
+                            <div>
+                                <a href="https://www.facebook.com/inolvidablefmradio/" target="_blank">
+                                    <div class="circulo wrapper-flex">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                        
+                            <div>
+                                <a href="https://www.instagram.com/inolvidablefmradio" target="_blank">
+                                    <div class="circulo wrapper-flex">
+                                        <i class="fa fa-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                                            </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="separa-50"></div>
+    </div>
+    <div class="desarrollador">
+        <div class="separa-30"></div>
+        <div class="container">
+            <p>Página web desarrollada por <a href="https://weblaspalmas.es/">Web Las Palmas</a></p>
+        </div>
+        <div class="separa-20"></div>
+    </div>
+
+</footer>
+
+<!-- <style>
+    .song1_wrapper .ximage {
+        background: url('/template/estandar/images/logo.png') !important;
+        width: 167px !important;
+    }
+</style> -->
+
+<div class="sidebar-wrapper right visible-xs visible-sm hidden-md">
+    <ul class="sidebar-nav">
+        <div class="separa-10"></div>
+                    <li class="menu_bot menu_programacion"><a
+                    href="#programacion">PROGRAMACIÓN</a></li>
+                            <li class="menu_bot"><a href="#radiodj">RADIO DJ'S</a></li>
+                                    <li class="menu_bot"><a href="#eventos">EVENTOS</a></li>
+                            <li class="menu_bot"><a href="#podcast">PODCAST</a></li>
+                            <li class="menu_bot"><a href="#eshop">TIENDA</a></li>
+                            <li class="menu_bot"><a href="#contacta">CONTACTAR</a></li>
+        
+    </ul>
+</div>
+
+
+
+<div class="modal fade" id="aviso-legal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Aviso Legal</h4>
+            </div>
+            <div class="modal-body">
+                <p><p>Por favor, lea esta p&aacute;gina con atenci&oacute;n. La misma contiene los T&eacute;rminos y Condiciones que regulan el acceso y la utilizaci&oacute;n del Sitio Web Inolvidable FM y sus servicios.</p>
+
+<p>- Los siguientes T&eacute;rminos y Condiciones constituyen un acuerdo v&aacute;lido y obligatorio entre usted y Inolvidable FM.<br />
+- La utilizaci&oacute;n del Sitio Web Inolvidable FM implica la aceptaci&oacute;n de estos T&eacute;rminos y Condiciones.<br />
+- Si usted no acepta estos T&eacute;rminos y Condiciones, no puede ni debe utilizar el Sitio Web Inolvidable FM.<br />
+- Inolvidable FM podr&aacute; revisar y modificar los T&eacute;rminos y Condiciones en cualquier momento actualizando la presente p&aacute;gina.<br />
+- Como estos cambios ser&aacute;n obligatorios para usted le sugerimos que, de tiempo en tiempo, relea estos T&eacute;rminos y Condiciones.<br />
+- Cualquier utilizaci&oacute;n del Sitio Web Inolvidable FM o de sus servicios ser&aacute; considerada una aceptaci&oacute;n por parte del usuario de los T&eacute;rminos y Condiciones vigentes.<br />
+- En caso de encontrar, en cualquier momento, estos T&eacute;rminos y Condiciones inaceptables, no deber&aacute; utilizar Inolvidable FM, en adelante.<br />
+- La utilizaci&oacute;n de Inolvidable FM y de sus servicios es un privilegio.<br />
+- Inolvidable FM se reserva el derecho a suspender permanentemente dicho privilegio a cualquier individuo (o grupo de individuos) a su sola discreci&oacute;n en cualquier momento y por cualquier motivo, sin verse en la obligaci&oacute;n de emitir explicaci&oacute;n alguna al respecto ni avisar al usuario por ning&uacute;n m&eacute;todo.<br />
+- Inolvidable FM se reserva el derecho a proporcionar determinados privilegios a determinados usuarios a su sola discreci&oacute;n en cualquier momento y por cualquier motivo, sin verse en la obligaci&oacute;n de emitir explicaci&oacute;n alguna al respecto.<br />
+- Cualquier pregunta relacionada con la utilizaci&oacute;n del Sitio Web Inolvidable FM y sus servicios debe ser dirigida a administracion@inolvidablefm.es</p>
+
+<p>GARANT&Iacute;A<br />
+LA INFORMACI&Oacute;N Y LOS MATERIALES QUE FIGURAN EN LAS DIRECCIONES DE ACCESO A Inolvidable FM O CUALQUIERA DE SUS PRODUCTOS ASOCIADOS, INCLUYENDO TEXTO, GR&Aacute;FICOS, CONEXIONES U OTROS ART&Iacute;CULOS - SE SUMINISTRAN &quot;COMO SE ENCUENTRAN&quot;, &quot;COMO EST&Aacute;N DISPONIBLES&quot;. Inolvidable FM NO OTORGA GARANT&Iacute;A ALGUNA SOBRE LA EXACTITUD, ADECUACI&Oacute;N O INTEGRIDAD DE LA INFORMACI&Oacute;N Y LOS MATERIALES, Y EXPRESAMENTE RENUNCIA A TODA RESPONSABILIDAD POR ERRORES U OMISIONES EN ESTA INFORMACI&Oacute;N Y MATERIALES. JUNTO CON LA INFORMACI&Oacute;N Y LOS MATERIALES, NO SE OTORGA GARANT&Iacute;A DE TIPO ALGUNO YA SEA T&Aacute;CITA, EXPRESA O ESTABLECIDA POR LEY INCLUYENDO, AUNQUE NO EN FORMA LIMITATIVA, LAS GARANT&Iacute;AS DE NO VIOLACI&Oacute;N DE DERECHOS DE TERCEROS, DE T&Iacute;TULO DE DOMINIO, ADECUACI&Oacute;N A FINES ESPEC&Iacute;FICOS Y NO EXISTENCIA DE VIRUS INFORM&Aacute;TICOS EN CONJUNCI&Oacute;N CON LA INFORMACI&Oacute;N Y MATERIALES. L&Iacute;MITE DE RESPONSABILIDAD: EN NING&Uacute;N CASO Inolvidable FM SER&Aacute; RESPONSABLE DE ALG&Uacute;N DA&Ntilde;O, INCLUYENDO, SIN L&Iacute;MITE, DA&Ntilde;OS, P&Eacute;RDIDAS O GASTOS DIRECTOS, INDIRECTOS, INHERENTES O CONSECUENTES, QUE SURJAN EN RELACI&Oacute;N CON ESTA DIRECCI&Oacute;N O SU USO O IMPOSIBILIDAD DE USO POR ALGUNA DE LAS PARTES, O EN RELACI&Oacute;N CON CUALQUIER FALLO EN EL RENDIMIENTO, ERROR, OMISI&Oacute;N, INTERRUPCI&Oacute;N, DEFECTO, DEMORA EN LA OPERACI&Oacute;N O TRANSMISI&Oacute;N, VIRUS INFORM&Aacute;TICO O FALLO DE SISTEMA O L&Iacute;NEA, A&Uacute;N EN EL CASO DE QUE Inolvidable FM, O SUS REPRESENTANTES FUERAN INFORMADOS SOBRE LA POSIBILIDAD DE DICHOS DA&Ntilde;OS, P&Eacute;RDIDAS O GASTOS. PRODUCTOS O SERVICIOS DE PAGO OFERTADOS POR LA WEB: EN CASO DE QUE EL USUARIO DECIDIERA EMPLEAR ALGUNO DE LOS PRODUCTOS O SERVICIOS DE PAGO OFRECIDOS POR Inolvidable FM, ESTE SE COMPROMETE A MANTENER INDEMNE A LA WEB DE TODO TIPO DE RECLAMACIONES RELACIONADAS CON, PERO SIN LIMITARSE A, P&Eacute;RDIDA DE DATOS, IMPOSIBILIDAD DE TRANSIMISI&Oacute;N, DIFICULTADES A LA HORA DE PROPORCIONAR LA INFORMACION SOLICITADA, ESPECIALMENTE DIFICULTADES T&Eacute;CNICAS, O BLOQUEOS O BAJA EN DISTINTOS SERVICIOS EFECTUADA POR Inolvidable FM AL CONTRAVENIR EL USUARIO ESTOS TERMINOS Y CONDICIONES.</p>
+
+<p>El usuario es el &uacute;nico responsable de la evaluaci&oacute;n y contrataci&oacute;n de los productos y servicios ofrecidos en nuestro Sitio Web. Inolvidable FM no ser&aacute; parte ni responsable de los contratos y/o acuerdos que se celebren entre el usuario y las distintas empresas que ofrecen sus servicios a trav&eacute;s de nuestro Sitio Web, ni ser&aacute; en modo alguno responsable de la veracidad o legalidad de los anuncios u ofertas publicados por nuestros anunciantes en nuestro Sitio Web.</p>
+
+<p>CADUCIDAD Y OFERTA DE SERVICIOS<br />
+Inolvidable FM ofrece gran variedad de productos y servicios. La presencia de un producto o servicio en nuestro site en un determinado momento no ofrece garant&iacute;a alguna de que dicho producto o servicio vaya a tener continuidad temporal. Inolvidable FM no est&aacute; obligada a seguir ofreciendo ning&uacute;n producto o servicio a lo largo del tiempo, ni a guardar los datos relacionados con ning&uacute;n producto o servicio, ni a realizar copias de seguridad, ni a mantener las condiciones de gratuidad o acceso proporcionados en el momento en que el usuario se da de alta en ese producto o servicio. El usuario no tendr&aacute; por lo tanto derecho a reclamar la restituci&oacute;n de acceso, contenidos, documentos, contrase&ntilde;as, condiciones, nombres de usuario, u otro tipo de datos de un servicio que contrat&oacute; o emple&oacute; en su d&iacute;a. Asimismo, los servicios que ofrece Inolvidable FM pueden estar gestionados por terceras partes, que en su caso aplicar&aacute;n sus propios t&eacute;rminos y condiciones de uso, siendo responsabilidad de las terceras partes la gesti&oacute;n de los datos de dichos usuarios. Inolvidable FM no est&aacute; obligada a advertir de esta contingencia, y puede en cualquier momento rescindir de forma unilateral los contratos entablados con terceras partes, sin que ello la obligue a mantener el servicio o seguir proporcionando a los usuarios el servicio o los contenidos que hayan volcado en &eacute;l. El usuario es el &uacute;nico responsable del uso de los servicios de Inolvidable FM. En caso de que la interrupci&oacute;n de un determinado servicio, o la p&eacute;rdida de datos ocasionen lesiones de cualquier tipo al usuario, &eacute;ste entiende al aceptar estos T&eacute;rminos y Condiciones que es &eacute;l mismo y s&oacute;lo &eacute;l mismo el &uacute;nico responsable de la p&eacute;rdida de estos datos, por lo que accede a no presentar denuncia alguna a Inolvidable FM por dichas lesiones.<br />
+- Inolvidable FM es un sitio web privado, y como tal decide los contenidos que pueden o no alojarse en su website, los usuarios que pueden o no acceder a &eacute;l, los privilegios de acceso que tendr&aacute;n dichos usuarios, y el tipo de material que pueden volcar en &eacute;l o al que pueden acceder. La decisi&oacute;n de Inolvidable FM sobre este tema es final, y el usuario entiende que Inolvidable FM puede optar por la moderaci&oacute;n o no de los contenidos volcados por otros usuarios sin derecho a r&eacute;plica o a petici&oacute;n de explicaciones sobre el tema.</p>
+
+<p>-Hiperv&iacute;nculos<br />
+El Sitio Web Inolvidable FM contiene hiperv&iacute;nculos a sitios web de terceras partes. Estos hiperv&iacute;nculos son provistos &uacute;nicamente como una facilidad para el usuario y no son patrocinados por Inolvidable FM. Adem&aacute;s, Inolvidable FM no es responsable del contenido de los sitios web de terceras partes hipervinculados y no efect&uacute;a ninguna aseveraci&oacute;n respecto de los contenidos de los materiales exhibidos en los sitios web de dichas terceras partes. Si el usuario decide acceder a los sitios web de terceras partes enlazadas, lo hace a su propio riesgo.</p>
+
+<p>REGLAS PARA LA COLOCACI&Oacute;N<br />
+-Toda informaci&oacute;n que el usuario provea o suministre a nuestro Sitio Web (la &quot;Informaci&oacute;n&quot;) no podr&aacute; contener:<br />
+a) Inolvidable FM se reserva el derecho a eliminar de sus site URLs o enlaces a sitios web publicados por sus usuarios.<br />
+b) Material protegido por derecho de autor.<br />
+c) Material que infrinja cualquier otro derecho de propiedad intelectual, o los derechos de privacidad de terceros.<br />
+d) Cualquier material sexualmente expl&iacute;cito, obsceno, calumnioso, difamatorio o injurioso.<br />
+e) Contenidos xen&oacute;fobos, racistas, que constituyan apolog&iacute;a del terrorismo o de la violencia.<br />
+f) Cualquier material ofensivo para terceros.<br />
+g) Cualquier material que Inolvidable FM considere inapropiado.<br />
+- El usuario no podr&aacute; utilizar la Informaci&oacute;n para:<br />
+a) Asumir una falsa identidad.<br />
+b) Colocar informaci&oacute;n falsa, imprecisa o enga&ntilde;osa.<br />
+c) Colocar cartas en cadena o estructuras piramidales.<br />
+d) Colocar opiniones o avisos, comerciales o de cualquier otra naturaleza.<br />
+e) Desvelar la identidad de otros usuarios.<br />
+f) Cualquier actividad que Inolvidable FM considere inapropiada.<br />
+Inolvidable FM no asume ninguna responsabilidad por las actividades o conducta de los usuarios. Nada en este Sitio Web debe ser considerado como un patrocinio o garant&iacute;a en relaci&oacute;n a un usuario o terceros, ya sea en relaci&oacute;n a sus sitios web, productos, servicios, o de cualquier otro modo.<br />
+- Al colocar contenidos en Inolvidable FM, el usuario es consciente y acepta que Inolvidable FM tiene el derecho FINAL e incontestable de eliminar dichos contenidos, extractarlos, suprimirlos, editarlos o variarlos en el modo que estime oportuno o bien optar por no hacerlo, y que no tiene posibilidad alguna de demandar a Inolvidable FM explicaci&oacute;n de ning&uacute;n tipo sobre dicha contingencia.</p>
+
+<p>- Reglas de Conducta:<br />
+1. El usuario no podr&aacute; responder a las colocaciones de otros usuarios de ninguna manera o por ning&uacute;n motivo distinto del esperado, exceptuando los cauces previstos y expresamente indicados en el sitio web.<br />
+2. El usuario no podr&aacute;n remitir correo electr&oacute;nico de naturaleza comercial que no haya sido solicitado a otros usuarios de Inolvidable FM.<br />
+3. El usuario no podr&aacute; revisar, modificar o eliminar cualquier material colocado por terceras personas en el Sitio Web Inolvidable FM. Inolvidable FM no est&aacute; obligada a monitorizar la conducta de sus usuarios, pero puede investigar cuando se reporten violaciones.<br />
+4. Ning&uacute;n usuario puede poseer m&aacute;s de una cuenta de acceso a los servicios de Inolvidable FM. Por cuenta se entiende un &uacute;nico nombre de usuario elegido por el usuario, y una direcci&oacute;n de email con su correspondiente contrase&ntilde;a generada por el sistema. Aquellas personas f&iacute;sicas que posean m&aacute;s de una cuenta ser&aacute;n bloqueadas, perdiendo todo privilegio de acceso al sitio y a la informaci&oacute;n por ellos volcada. Asimismo, y de forma no excluyente, se bloquear&aacute;n cuentas cuando varios usuarios participan o votan desde una misma IP o una IP de un rango similar, cuando un usuario persigue a otro y s&oacute;lo hace eso, cuando un usuario ha intentando de forma fraudulenta darse de alta con diversos nicks y una misma IP, cuando dos usuarios desde una misma IP emitan votos positivos cruzados, a participantes que &uacute;nicamente se dedican a puntuar a otros usuarios, en especial si lo hacen negativamente y de forma reiterada, a usuarios con una IP igual o del mismo rango y distintos nicks que se dediquen a puntuar negativamente de forma persistente, a usuarios con una IP igual o del mismo rango que se conecten de forma persistente con distintos nicks, y en general cuando se detecten irregularidades fraudulentas relacionadas con cuentas de acceso o con el sistema de puntos.</p>
+
+<p>A los usuarios que violen estas Reglas de Conducta se les podr&aacute; negar el acceso al Sitio Web a la sola discreci&oacute;n de Inolvidable FM, no teniendo el usuario posibilidad alguna de reclamar contraprestaciones econ&oacute;micas por la negativa de acceso a los servicios de esta web. Las decisiones de expulsi&oacute;n son finales e incontestables. Si la cuenta de un usuario ha sido bloqueada por la Administraci&oacute;n de Inolvidable FM, dicho usuario no puede abrir otra cuenta. Las decisiones de expulsi&oacute;n son finales. En caso de que los usuarios abran cuentas tras una expulsi&oacute;n y Inolvidable FM lo detecta, dichas cuentas ser&aacute;n tambi&eacute;n bloqueadas.</p>
+
+<p>- Reglas de Seguridad:<br />
+Los usuarios tienen prohibido violar o intentar violar la seguridad del Sitio Web Inolvidable FM por medio de los siguientes actos, sin excluir otros que no hayan sido enumerados:<br />
+1. Acceso a datos no provistos para tal usuario, o acceso a un servidor o cuenta a la que el usuario no se encuentra autorizado a acceder.<br />
+2. Probar o testear la vulnerabilidad de un sistema o red o violar medidas de seguridad o autenticaci&oacute;n sin la debida autorizaci&oacute;n.<br />
+3. Interferir con el servicio de cualquier usuario, incluyendo, sin limitaci&oacute;n, la remisi&oacute;n de virus al Sitio Web, sobrecarg&aacute;ndolo, &quot;inund&aacute;ndolo&quot;, o mediante &quot;mailbombing&quot; o &quot;crashing&quot;.<br />
+4. Intentar acceder a las cuentas de otros usuarios.<br />
+5. Ceder a terceros los datos de acceso, estad&iacute;sticas, productos, contrase&ntilde;as o servicios otorgados por Inolvidable FM.<br />
+6. Interferir en el buen funcionamiento de los servicios de Inolvidable FM sobrecarg&aacute;ndolos o introduciendo c&oacute;digos maliciosos, posts repetidos, hilos vac&iacute;os, controles ActiveX, javascripts, applets de Java, mensajes destinados a variar las puntuaciones o los listados de nuestros servicios, mensajes o posts destinados a modificar el servidor, mensajes o posts dedicados a inflar sus puntuaciones en distintos servicios. Esta lista no es exhaustiva.<br />
+7. Enviar correo electr&oacute;nico no solicitado, incluyendo promociones y/o publicidad de productos o servicios.</p>
+
+<p>La interpretaci&oacute;n de estas normas s&oacute;lo pertenece a Inolvidable FM y esta interpretaci&oacute;n es incontestable por parte del usuario final. La violaci&oacute;n de estas Reglas de Seguridad puede generar responsabilidad de naturaleza penal y/o civil. Inolvidable FM podr&aacute; investigar los hechos que puedan comprender dichas violaciones y cooperar con las autoridades en las acciones que se iniciaren contra los usuarios involucrados en dichas violaciones.</p>
+
+<p>INDEMNIDAD<br />
+El usuario se compromete a defender y mantener indemne a Inolvidable FM, sus funcionarios, directores, empleados y agentes, y a las empresas que le prestan servicio en su desempe&ntilde;o como proveedores de soporte, de housing, etc., de cualquier reclamo, acci&oacute;n o demanda, incluyendo, sin limitaci&oacute;n, honorarios legales, resultantes de la utilizaci&oacute;n por su parte del Sitio Web, el Contenido, u originado por su violaci&oacute;n a estos T&eacute;rminos y Condiciones. Los contenidos volcados por los usuarios de Inolvidable FM en su sitio web son responsabilidad de los propios usuarios, y empleando nuestros servicios el usuario se compromete de forma expresa a asumir la responsabilidad por los contenidos que vuelca, manteniendo indemne en todo momento a Inolvidable FM de toda responsabilidad, civil o penal, que pudiera derivarse de su actividad en nuestro sitio web.</p>
+
+<p>PRESENTACIONES<br />
+La totalidad de la informaci&oacute;n que se env&iacute;e a Inolvidable FM a trav&eacute;s de esta direcci&oacute;n ser&aacute; considerada propiedad de Inolvidable FM. Asimismo, Inolvidable FM podr&aacute; utilizar, con cualquier fin, toda idea, concepto, conocimiento o t&eacute;cnica incluida en la informaci&oacute;n que proporcione un visitante a trav&eacute;s de esta direcci&oacute;n. Asimismo, dicha informaci&oacute;n podr&aacute; ser editada, extractada, eliminada o transmitida a terceros sin previo aviso. El usuario expresamente autoriza a Inolvidable FM el uso de los datos por &eacute;l transmitidos y acuerda no reclamar la posesi&oacute;n de dichos datos con posterioridad.</p>
+
+<p>POL&Iacute;TICA DE PRIVACIDAD<br />
+Inolvidable FM informa que para permitir que los usuarios puedan acceder a algunos de los servicios del website, se hace necesario proceder a la recogida de datos de car&aacute;cter personal. De acuerdo con lo establecido en la LPD (Ley Org&aacute;nica 15/1999, de 13 de diciembre, de Protecci&oacute;n de Datos de Car&aacute;cter Personal) y dem&aacute;s legislaci&oacute;n aplicable, Inolvidable FM procede a la creaci&oacute;n de uno o varios ficheros automatizados de datos de car&aacute;cter personal, en los que se recoger&aacute;n aquellos datos que sean necesarios para realizar el acceso a algunos de los servicios del website. Los datos aportados por los usuarios podr&aacute;n ser consultados, modificados o eliminados por su titular a trav&eacute;s del &aacute;rea personal del servicio o de otros sistemas claramente identificados en todo el website y las notificaciones que a los usuarios se env&iacute;en. Tambi&eacute;n se puede contactar con los responsables de dichos datos escribiendo a administracion@inolvidablefm.es para su modificaci&oacute;n o eliminaci&oacute;n. El usuario responder&aacute;, en cualquier caso, de la veracidad de los datos facilitados. Nuestro sistema de registro de usuarios mantendr&aacute; la privacidad total de sus registrados y de todos sus datos y nunca dar&aacute; informaci&oacute;n personal a terceras partes. Si se podr&aacute;n dar a terceras partes datos globales y estad&iacute;sticas an&oacute;nimas sobre el registro de usuarios, no obstante, en ning&uacute;n caso estos datos podr&aacute;n identificar personalmente al usuario registrado por terceras partes. La recogida y tratamiento automatizado de los datos personales tiene como finalidad la correcta prestaci&oacute;n de los servicios que el usuario suscribe, los datos de los usuarios registrados ser&aacute;n utilizados para generar estad&iacute;sticas internas de visitantes de nuestro web site Inolvidable FM, adem&aacute;s el usuario registrado si podr&aacute; recibir por email notificaciones sobre noticias, promociones, premios, ofertas, etc. gestionadas siempre por Inolvidable FM. El usuario registrado conoce y es consciente que la Informaci&oacute;n de registro es recogida, grabada y conservada en los servidores de Inolvidable FM o de las empresas que le prestan soporte y asistencia. El responsable del fichero ha adoptado las medidas legalmente exigidas de seguridad en sus instalaciones, sistemas y ficheros. Asimismo, el responsable del fichero garantiza la confidencialidad de los Datos Personales, aunque revelar&aacute; a las autoridades p&uacute;blicas competentes los Datos Personales y cualquier otra informaci&oacute;n que est&eacute; en su poder o sea accesible a trav&eacute;s de sus sistemas y sea requerida de conformidad con las disposiciones legales y reglamentarias aplicables. Inolvidable FM queda exonerada de toda responsabilidad que pudiera derivarse del uso indebido o negligente de las contrase&ntilde;as asignadas para acceder al website.<br />
+- Informaci&oacute;n registrada autom&aacute;ticamente.<br />
+Utilizamos la direcci&oacute;n IP de los visitantes para ayudar a diagnosticar problemas con nuestro servidor, administrar nuestro sitio Web y poder mantener nuestro programa de estad&iacute;sticas, para conseguir la funcionalidad y total fiabilidad del sistema de nuestro web site. Asimismo, dicha direcci&oacute;n IP puede almacenarse con objeto de impedir su acceso a nuestro site, o con motivos de seguridad, entendi&eacute;ndose que esta informaci&oacute;n es cedida por el usuario de forma voluntaria, pudiendo ser empleada por Inolvidable FM a su discreci&oacute;n, siempre dentro de los presentes T&eacute;rminos, condiciones, y pol&iacute;tica de privacidad.<br />
+Esta direcci&oacute;n IP puede hacerse p&uacute;blica en algunas ocasiones, como al emplear los chats, foros, bit&aacute;cora, etc. Como usuario, debe ser consciente de esta contingencia.<br />
+- Cookies.<br />
+Cuando el usuario navega a trav&eacute;s de nuestra web puede recibir en su ordenador cookies enviadas desde nuestro servidor o , por cuenta nuestra, desde servidores de terceras empresas con las que hemos contratado la prestaci&oacute;n de servicios de publicidad, medici&oacute;n de audiencias. En ning&uacute;n caso, las empresas, desde las cuales se env&iacute;an, pueden conocer los datos de car&aacute;cter personal de los usuarios. En caso que, permita su recepci&oacute;n, puede conocer el servidor desde el que han sido enviadas, para lo cual deber&aacute; consultar las instrucciones de uso de su navegador&quot;</p>
+
+<p>No proporcionan ning&uacute;n dato de car&aacute;cter personal del usuario y permiten que nuestro servidor, donde esta instalada nuestra web pueda reconocer, el navegador del ordenador utilizado por el usuario con la finalidad de que la navegaci&oacute;n pueda ser mas sencilla. Tambi&eacute;n pueden permitir, siempre y cuando, el Usuario se haya registrado previamente, acceder a los contenidos exclusivos para usuarios registrados de nuestra web sin que tenga que registrarse en cada visita.</p>
+
+<p>El Usuario puede configurar su navegador para ser avisado a trav&eacute;s de la pantalla de su ordenador de la recepci&oacute;n en el mismo de cookies. Asimismo, el usuario puede impedir la instalaci&oacute;n de cookies en su ordenador, para ello debe consultar las instrucciones de uso de su navegador</p>
+
+<p>COPYRIGHT<br />
+Los derechos de propiedad intelectual de estas p&aacute;ginas y de las pantallas que muestran estas p&aacute;ginas, y de la informaci&oacute;n y material que aparecen en las mismas y de su disposici&oacute;n, pertenecen a Inolvidable FM salvo que se indique lo contrario. Los usuarios de nuestro Sito Web se comprometen a no reproducir, modificar, exhibir, vender, o distribuir el Contenido, ni a usarlo de cualquier otro modo con objeto comercial o p&uacute;blico incluso citando la fuente original. Esta prohibici&oacute;n incluye la copia y adaptaci&oacute;n del c&oacute;digo HTML, utilizado para generar sitios web, en el Sitio Web Inolvidable FM y todos los materiales gr&aacute;ficos por &eacute;l servidos, incluyendo botones, barras, fondos, logotipos, fotograf&iacute;as, u otros no expresados en estos T&eacute;rminos y Condiciones, exceptuando los casos en los que Inolvidable FM exprese lo contrario en un lugar destacado.</p>
+</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="politica-de-privacidad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Política de Privacidad</h4>
+            </div>
+            <div class="modal-body">
+                <p><p>A trav&eacute;s de la presente Pol&iacute;tica (en lo que sigue, la &ldquo;Pol&iacute;tica de Privacidad y de Cookies&rdquo;), se regula la pol&iacute;tica de privacidad y de cookies de la Plataforma Web https://www.inolvidablefm.es (en adelante, &ldquo;la Plataforma&rdquo;), bajo la titularidad de Inolvidable FM, con direcci&oacute;n de correo electr&oacute;nico de contacto a efectos de la presente pol&iacute;tica de privacidad y de cookies en: administracion@inolvidablefm.es.</p>
+
+<p>1. Uso, finalidad y r&eacute;gimen jur&iacute;dico aplicable</p>
+
+<p>La Plataforma es un mecanismo de interactuaci&oacute;n, comunicaci&oacute;n y soporte que &ldquo;Inolvidable FM&rdquo; pone a disposici&oacute;n de los usuarios de Internet a fin de brindar a &eacute;stos informaci&oacute;n suficiente, legal y adecuada en torno a su actividad, productos y servicios por relaci&oacute;n a sus leg&iacute;timas actividades econ&oacute;micas y empresariales, las cuales, se rigen por la normativa espa&ntilde;ola aplicable y, en lo que concierne:</p>
+
+<p>A la prestaci&oacute;n de servicios de la sociedad de la informaci&oacute;n, con car&aacute;cter b&aacute;sico, por la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la informaci&oacute;n y de comercio electr&oacute;nico.<br />
+Al tratamiento de datos de car&aacute;cter personal, por la vigente normativa espa&ntilde;ola y europea de protecci&oacute;n de datos personales de las personas f&iacute;sicas. En particular, el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de Abril de 2016 (en adelante, el &ldquo;RGPD&rdquo;), conforme a lo previsto en esta misma norma.</p>
+
+<p>En todo caso, el usuario se compromete a hacer un uso adecuado y l&iacute;cito de la Plataforma as&iacute; como de los contenidos, productos y servicios dispuestos a partir de la misma, de conformidad con la legislaci&oacute;n aplicable en cada momento.</p>
+
+<p>Asimismo, el usuario de la Plataforma se compromete espec&iacute;ficamente a lo que sigue:</p>
+
+<p>Garantizar la autenticidad, veracidad, actualidad y exactitud de todos aquellos datos que comunique a &ldquo;Inolvidable FM&rdquo;, resultando tal usuario el &uacute;nico responsable en caso contrario.<br />
+Usar la misma de forma exclusiva para los fines y funcionalidades dispuestas a tal fin por &ldquo;Inolvidable FM&rdquo;, present&aacute;ndose tales funcionalidades tal y como son por parte de &ldquo;Inolvidable FM&rdquo;, quedando prohibido para el usuario usar la Plataforma para cualquier otro fin o medio.<br />
+Hacer un uso legal y leg&iacute;timo de la Plataforma, evitando un uso no autorizado, fraudulento, ilegal o ileg&iacute;timo de la misma y/o de los contenidos e informaci&oacute;n dispuestas a trav&eacute;s de &eacute;sta, evitando vulnerar la presente pol&iacute;tica y la normativa aplicable, y da&ntilde;ar los derechos e intereses leg&iacute;timos de &ldquo;Inolvidable FM&rdquo;, o de cualquier otro tercero que pudiera verse afectado como consecuencia de tal actuaci&oacute;n.<br />
+No provocar da&ntilde;os en los sistemas o elementos asociados a la Plataforma, de sus proveedores o de terceros, o intentar quebrantar las medidas de seguridad o autenticaci&oacute;n de los mismos, llevar a cabo alguna acci&oacute;n que provoque una saturaci&oacute;n desproporcionada o innecesaria en la infraestructura o del entorno de comunicaciones relacionado con la Plataforma, atacando de cualquier modo a la misma. &ldquo;Inolvidable FM&rdquo; podr&aacute; adoptar cuantas medidas preventivas o correctoras resulten necesarias para proteger sus intereses en orden al correcto funcionamiento de la Plataforma Web y las funcionalidades espec&iacute;ficas dispuestas en cada caso.<br />
+No introducir o difundir a trav&eacute;s de la Plataforma virus inform&aacute;ticos o malware que sea susceptibles de provocar da&ntilde;os.<br />
+No intentar acceder, utilizar y/o manipular los datos de &ldquo;Inolvidable FM&rdquo; o bajo su responsabilidad, o de terceros proveedores y de otros usuarios.<br />
+En particular, y a t&iacute;tulo meramente indicativo y no exhaustivo, el usuario se compromete a no transmitir, difundir o poner a disposici&oacute;n de terceros informaciones, datos, contenidos, mensajes, que puedan ser constitutivos de vulneraci&oacute;n de derechos de &ldquo;Inolvidable FM&rdquo; o de terceros.<br />
+Acceder sin autorizaci&oacute;n o interactuar con una identidad falsa, suplantando o no la identidad de terceros o utilizando un perfil o realizando cualquier otra acci&oacute;n que pueda generar confusi&oacute;n o inducir a error acerca de la correcta identificaci&oacute;n del usuario de que se trate.</p>
+
+<p>2. Usuarios</p>
+
+<p>La presente pol&iacute;tica de privacidad y de cookies se dirige a los usuarios de la Plataforma en lo que concierne al tratamiento de sus datos personales.</p>
+
+<p>En todo caso, se destaca que esta Plataforma se dirige a usuarios mayores de 18 a&ntilde;os de edad quedando prohibida su utilizaci&oacute;n a menores de edad.</p>
+
+<p>La informaci&oacute;n y datos personales que aporten los usuarios que pretendan navegar o registrarse en la Plataforma deber&aacute; ser:</p>
+
+<p>Suficiente, aunque ajustada, limitada y proporcionada a los fines leg&iacute;timos de tratamiento informados por &ldquo;Inolvidable FM&rdquo;, con el m&aacute;ximo respeto a los principios de la limitaci&oacute;n de la finalidad y de minimizaci&oacute;n de los datos personales (art&iacute;culos 5.1 apartados b) y c) del RGPD).<br />
+Exacta, actualizada y veraz, a fin de poder verificar de forma adecuada la identidad, capacidad y, en su caso, representaci&oacute;n del usuario de que se trate, as&iacute; como poder ajustar, en cada caso, los tratamientos de datos que se realizan a las necesidades espec&iacute;ficas y la situaci&oacute;n real de los usuarios. Todo ello en atenci&oacute;n al principio de exactitud de los datos personales (5.1 apartado d) del RGPD).</p>
+
+<p>Los usuarios ser&aacute;n plenamente responsables por el uso correcto de sus cuentas de usuario y de las claves asociadas a &eacute;stas. Si el usuario registrado considera que ha podido ser comprometida la seguridad de su cuenta y claves asociadas deber&aacute; ponerse de forma inmediata en contacto con &ldquo;Inolvidable FM&rdquo; a trav&eacute;s de los datos de contacto dispuestos al inicio de esta Pol&iacute;tica y reportar la situaci&oacute;n o el incidente que corresponda a fin de que &ldquo;Inolvidable FM&rdquo; pueda adoptar las correspondientes medidas que resulten apropiadas a partir del momento de la comunicaci&oacute;n efectuada por el usuario. Toda responsabilidad por los da&ntilde;os y perjuicios asociados a un inadecuado uso y gesti&oacute;n personal de las cuentas y claves asociadas recaer&aacute; en los usuarios titulares de tales cuentas, eximiendo de forma absoluta a &ldquo;Inolvidable FM&rdquo; como consecuencia de lo anterior.</p>
+
+<p>3. Derecho de informaci&oacute;n</p>
+
+<p>En cumplimiento de la vigente normativa protectora de datos personales, y atendiendo de forma particular a lo dispuesto en los art&iacute;culos 12 a 14 del RGPD, se le informa de lo que sigue:</p>
+
+<p>Que el responsable del tratamiento es Inolvidable FM, con direcci&oacute;n de correo electr&oacute;nico de contacto a efectos de la presente en: administracion@inolvidablefm.es.</p>
+
+<p>Que los datos personales que los usuarios aporten a trav&eacute;s de la Plataforma ser&aacute;n tratados con la finalidad estipulada de forma particular en esta pol&iacute;tica de privacidad y de cookies y, en su caso, en los distintos formularios de datos dispuestos en la Plataforma. En tal sentido, la recogida de datos a trav&eacute;s de la Plataforma atiende a los siguientes fines de tratamiento:</p>
+
+<p>Posibilitar a los usuarios la navegaci&oacute;n por la misma, permitiendo con ello el acceso a la informaci&oacute;n y a los contenidos dispuestos en la Plataforma, incluyendo, informaci&oacute;n sobre campa&ntilde;as promocionales o publicitarias destinadas a la contrataci&oacute;n de productos y servicios, bien de &ldquo;Inolvidable FM&rdquo;, bien de terceras empresas con las que &ldquo;Inolvidable FM&rdquo; se relacione. Tal acceso se entiende sin perjuicio del car&aacute;cter oneroso de los contenidos, servicios y productos espec&iacute;ficos que se ofrecen a trav&eacute;s de la Plataforma y que los usuarios podr&aacute;n contratar si as&iacute; lo desean.<br />
+Atender las espec&iacute;ficas solicitudes y peticiones que los usuarios pudieran realizar en este &aacute;mbito.<br />
+Gestionar de forma integral la cuenta de los usuarios registrados a trav&eacute;s de la Plataforma.<br />
+Adoptar cuantas medidas de protecci&oacute;n resulten aplicables de conformidad con la normativa vigente, incluyendo, la posible anonimizaci&oacute;n de sus datos personales aplicando, para ello, las adecuadas t&eacute;cnicas disponibles al efecto. Por consiguiente, en este &aacute;mbito, tambi&eacute;n podr&aacute;n realizarse tratamientos de anonimizaci&oacute;n y seudonimizaci&oacute;n para la mejor protecci&oacute;n de sus datos personales.<br />
+Aplicar las pertinentes medidas de seguridad, t&eacute;cnicas y/o organizativas sobre los datos personales de los usuarios que resulten convenientes en atenci&oacute;n a los riesgos detectados en torno a sus derechos en cada momento por &ldquo;Inolvidable FM&rdquo; incluyendo, el cifrado de datos personales y otras medidas que pueden comportar ciertos tratamientos sobre los datos de los usuarios de la Plataforma.</p>
+
+<p>En caso de que usted no est&eacute; de acuerdo con tales finalidades de tratamiento, le instamos a abandonar de inmediato nuestra Plataforma. En caso contrario, por ejemplo, por aceptaci&oacute;n de esta pol&iacute;tica, o simplemente por continuar navegando por la Plataforma, previo conocimiento de la informaci&oacute;n contenida en esta pol&iacute;tica, se entender&aacute; que el usuario consiente de forma inequ&iacute;voca a los fines de tratamiento previamente informados. A estos efectos, se deber&aacute; estar asimismo a lo previsto en el apartado 4 de esta pol&iacute;tica en lo relativo al consentimiento y los derechos de los usuarios en este &aacute;mbito. Asimismo se le informa de lo siguiente:</p>
+
+<p>Que la base leg&iacute;tima de tratamiento es, con car&aacute;cter principal, el consentimiento del usuario, de forma que, una vez informado el usuario de la presente pol&iacute;tica, si aqu&eacute;l acepta la misma, o simplemente contin&uacute;a navegando por la Plataforma se entender&aacute; que presta su consentimiento inequ&iacute;voco al tratamiento de sus datos personales a los fines indicados. Por lo que, si un usuario no est&aacute; de acuerdo con esta pol&iacute;tica o los fines de tratamiento informados, como ya se ha indicado, se insta al mismo a que no contin&uacute;e navegando y abandone de inmediato la Plataforma. En caso de solicitud o contrataci&oacute;n espec&iacute;fica por los usuarios de determinados contenidos, productos o servicios a trav&eacute;s de la Plataforma, la base principal de tratamiento ser&aacute; la relativa a la necesaria aplicaci&oacute;n de medidas precontractuales a petici&oacute;n del interesado, cuando as&iacute; concurra, o la relativa a la ejecuci&oacute;n de un contrato en caso de que el usuario finalmente contrate el contenido, producto o servicio que corresponda.</p>
+
+<p>Que, con car&aacute;cter general, los datos personales de los usuarios recabados a trav&eacute;s de la Plataforma no ser&aacute;n cedidos a terceros sin informar previamente a &eacute;stos sobre qu&eacute; datos concretos se van a ceder, la identidad de los cesionarios o destinatarios de sus datos, de su actividad y de las finalidades espec&iacute;ficas de tratamiento a las que dichos cesionarios podr&aacute;n destinar sus datos<br />
+Los datos personales de los usuarios no ser&aacute;n cedidos a ning&uacute;n otro tercero, salvo que medie el consentimiento del usuario o, en su caso, concurra cualquier otra base de legitimaci&oacute;n del tratamiento seg&uacute;n lo previsto en el art&iacute;culo 6 del RGPD como, por ejemplo, el debido cumplimiento de una obligaci&oacute;n legal por parte de &ldquo;Inolvidable FM&rdquo; (licitud del tratamiento).</p>
+
+<p>Que, con car&aacute;cter general, no est&aacute;n previstas transferencias internacionales de sus datos personales, adopt&aacute;ndose las medidas necesarias en este &aacute;mbito de conformidad con el RGPD en caso contrario.</p>
+
+<p>Que, en virtud del art&iacute;culo 30 del C&oacute;digo de Comercio espa&ntilde;ol, en caso de tratarse el usuario de un cliente de &ldquo;Inolvidable FM&rdquo;, tras la finalizaci&oacute;n de la relaci&oacute;n entre las partes, sus datos personales podr&aacute;n ser conservados por &ldquo;Inolvidable FM&rdquo; durante el plazo de seis a&ntilde;os. En caso de no tratarse de un cliente, sus datos de usuario se conservar&aacute;n durante el tiempo estrictamente necesario para permitirle la correcta navegaci&oacute;n, acceso y disfrute a los contenidos, productos y servicios dispuestos a trav&eacute;s de la Plataforma que requiera o visite, todo ello, en coherencia con lo dispuesto en la presente pol&iacute;tica de privacidad y de cookies y la legislaci&oacute;n aplicable en cada caso.</p>
+
+<p>Que podr&aacute; ejercitar sus derechos de acceso, rectificaci&oacute;n, supresi&oacute;n, limitaci&oacute;n del tratamiento, portabilidad de datos y oposici&oacute;n, dirigiendo una comunicaci&oacute;n por escrito a trav&eacute;s del correo electr&oacute;nico administracion@radiolaspalmas.com con la Ref. &ldquo;Ejercicio Derechos&rdquo; acompa&ntilde;ando a su solicitud copia de su documento nacional de identidad o documento identificativo equivalente (pasaporte, N.I.E&hellip;.). En caso de no considerar atendidos de forma debida sus derechos personales, podr&aacute; presentar una reclamaci&oacute;n ante la autoridad de control competente, en este caso, la Agencia Espa&ntilde;ola de Protecci&oacute;n de Datos.</p>
+
+<p>Que respecto a los servicios / contenidos de terceros a los que se pueda acceder a trav&eacute;s de los hiperv&iacute;culos incluidos en la Plataforma, &eacute;stos se regir&aacute;n por las condiciones que dicho tercero establezca en su pol&iacute;tica de privacidad contenida en su p&aacute;gina web. Asimismo, que &ldquo;Inolvidable FM&rdquo; no es responsable del tratamiento de los datos personales del usuario que pudiera derivarse del acceso, navegaci&oacute;n o utilizaci&oacute;n de dichas p&aacute;ginas. El usuario que decide acceder a las p&aacute;ginas de contenidos de terceros lo hace bajo su total responsabilidad asumiendo el tratamiento que de sus datos realicen tales terceros. En este sentido, se le recomienda que, cada vez que acceda a las Plataformas de terceros lea con detenimiento las pol&iacute;ticas de privacidad y usos de cookies de las mismas, pues les son vinculantes.</p>
+
+<p>4. Consentimiento del interesado</p>
+
+<p>Mediante la aceptaci&oacute;n de la presente pol&iacute;tica, el usuario otorga su consentimiento inequ&iacute;voco, libre e informado para el tratamiento de sus datos personales en orden a los fines de tratamiento descritos en el apartado 3 de la presente pol&iacute;tica de privacidad y de cookies. En el caso espec&iacute;fico de las cookies se deber&aacute; estar a lo dispuesto de forma particular en el apartado 7 de esta misma pol&iacute;tica.</p>
+
+<p>El usuario tendr&aacute; capacidad para elegir el tratamiento y destino de sus datos, seg&uacute;n sus espec&iacute;ficos intereses y necesidades en cada caso, de forma que, cuando el tratamiento se base en el consentimiento del mismo, &eacute;ste tendr&aacute; derecho a retirarlo en cualquier momento, aunque tal retirada no afectar&aacute; en modo alguno a la licitud del tratamiento previo realizado por &ldquo;Inolvidable FM&rdquo;.</p>
+
+<p>Cuando el tratamiento de los datos personales tuviera por objeto la publicidad o la mercadotecnia directa, el usuario tendr&aacute; derecho a oponerse en todo momento al tratamiento de los datos personales que le conciernan, incluida la elaboraci&oacute;n de perfiles en la medida en que est&eacute; relacionada con la citada mercadotecnia. Podr&aacute; ejercitar los derechos personales descritos en el apartado 3 de la presente pol&iacute;tica conforme lo indicado en este mismo apartado. &ldquo;Inolvidable FM&rdquo; se asegurar&aacute; de recordar y de posibilitar a los usuarios el correcto ejercicio de su derecho de oposici&oacute;n en cada comunicaci&oacute;n comercial que, en su caso, le pudiera dirigir en este &aacute;mbito. Del mismo modo, el usuario podr&aacute; oponerse al tratamiento de sus datos con fines estad&iacute;sticos en los t&eacute;rminos descritos en el apartado 21.6 del RGPD.</p>
+
+<p>En todo caso, &ldquo;Inolvidable FM&rdquo; podr&aacute; impedir la utilizaci&oacute;n de la Plataforma y de los servicios, contenidos y funcionalidades asociadas a &eacute;sta en caso de que el usuario no acepte la presente pol&iacute;tica, o no consienta en el tratamiento de su informaci&oacute;n personal de conformidad con lo dispuesto en la misma.</p>
+
+<p>La aceptaci&oacute;n de la presente pol&iacute;tica es independiente a la posible aceptaci&oacute;n de los t&eacute;rminos y condiciones legales de tipo particular que pudieran regir la contrataci&oacute;n espec&iacute;fica por los usuarios de los servicios y productos dispuestos a trav&eacute;s de la Plataforma.</p>
+
+<p>5. Seguridad</p>
+
+<p>&ldquo;Inolvidable FM&rdquo; ha adoptado y aplica los niveles de seguridad requeridos por la legislaci&oacute;n aplicable respecto a los datos personales bajo su responsabilidad, en funci&oacute;n del correspondiente enfoque de riesgo realizado, y procura instalar y/o aplicar medios y medidas t&eacute;cnicas u organizativas de protecci&oacute;n adicionales de cara a reforzar la seguridad general de los tratamientos con datos personales, sistemas, entorno de comunicaciones y organizaci&oacute;n corporativa, as&iacute; como para garantizar la protecci&oacute;n debida frente el tratamiento no autorizado o il&iacute;cito y contra su p&eacute;rdida, destrucci&oacute;n o da&ntilde;o incidental (principio de integridad y confidencialidad). No obstante, el usuario debe ser consciente de que las medidas de seguridad en Internet no son, en modo alguno, inexpugnables y responden al estado de la t&eacute;cnica en cada momento y a su coste de aplicaci&oacute;n.</p>
+
+<p>A estos efectos, considerar&aacute; de forma especial los criterios de aplicaci&oacute;n y medidas de seguridad, y dem&aacute;s obligaciones de seguridad asociadas al RGPD, con especial atenci&oacute;n a lo dispuesto en el art&iacute;culo 32 del RGPD.</p>
+
+<p>6. Deber de secreto y confidencialidad</p>
+
+<p>&ldquo;Inolvidable FM&rdquo; se compromete a cumplir con el deber de secreto y de confidencialidad respecto a la informaci&oacute;n y datos personales aportados por los usuarios de la Plataforma, y que est&eacute; bajo su control y responsabilidad, de acuerdo con la legislaci&oacute;n que resulte de aplicaci&oacute;n y el enfoque de riesgo que corresponda en cada momento.</p>
+
+<p>7. Pol&iacute;tica de cookies</p>
+
+<p>Tal y como establece el Considerando 30 del RGPD, las personas f&iacute;sicas pueden ser asociadas a identificadores en l&iacute;nea facilitados por sus dispositivos, aplicaciones, herramientas y protocolos, como direcciones de los protocolos de internet, identificadores de sesi&oacute;n en forma de &ldquo;cookies&rdquo; u otros identificadores, como etiquetas de identificaci&oacute;n por radiofrecuencia. Esto puede dejar huellas que, en particular, al ser combinadas con identificadores &uacute;nicos y otros datos recibidos por los servidores, pueden ser utilizadas para elaborar perfiles de las personas f&iacute;sicas e identificarlas. Por este motivo, &ldquo;Inolvidable FM&rdquo; cuenta con una pol&iacute;tica de cookies coherente con la normativa aplicable.</p>
+
+<p>7.1. Normativa aplicable:</p>
+
+<p>El art&iacute;culo 22 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la informaci&oacute;n y de comercio electr&oacute;nico (LSSICE), relativo a los derechos de los destinatarios en las comunicaciones comerciales por v&iacute;a electr&oacute;nica, los prestadores de servicios s&oacute;lo podr&aacute;n utilizar dispositivos de almacenamiento y recuperaci&oacute;n de datos en equipos terminales de los destinatarios, cuando &eacute;stos hayan dado su consentimiento previo informado.</p>
+
+<p>Al efecto, se les deber&aacute; brindar a estos destinatarios y usuarios finales una informaci&oacute;n clara y completa sobre su utilizaci&oacute;n, en particular, sobre los fines del tratamiento de los datos, con arreglo a lo dispuesto en la normativa protectora de datos personales. Por tanto, cuando sea t&eacute;cnicamente posible y eficaz, el consentimiento del destinatario para aceptar el tratamiento de los datos podr&aacute; facilitarse mediante el uso de los par&aacute;metros adecuados del navegador o de otras aplicaciones.</p>
+
+<p>Lo anterior no impedir&aacute; el posible almacenamiento o acceso de &iacute;ndole t&eacute;cnica al solo fin de efectuar la transmisi&oacute;n de una comunicaci&oacute;n por una red de comunicaciones electr&oacute;nicas o, en la medida que resulte estrictamente necesario, para la prestaci&oacute;n de un servicio de la sociedad de la informaci&oacute;n expresamente solicitado por el destinatario.</p>
+
+<p>7.2. Consentimiento del usuario y cookies: regla general y excepci&oacute;n.</p>
+
+<p>Con car&aacute;cter general, cuando la instalaci&oacute;n y/o utilizaci&oacute;n de cookies conlleve el tratamiento de datos personales, ya se trate de cookies propias o de terceros, de sesi&oacute;n o persistentes, &ldquo;Inolvidable FM&rdquo;, como responsable del tratamiento, brindar&aacute; la informaci&oacute;n necesaria en este &aacute;mbito y recabar&aacute; el previo consentimiento informado del usuario para instalar y/o utilizar aqu&eacute;llas.</p>
+
+<p>Se except&uacute;an &uacute;nicamente de tal consentimiento aqu&eacute;llas que permitan, de forma exclusiva, la comunicaci&oacute;n entre el equipo del usuario y la red y, estrictamente, aqu&eacute;llas utilizadas para prestar un servicio solicitado por el usuario. Por ejemplo, quedar&iacute;an exceptuadas las denominadas &ldquo;cookies t&eacute;cnicas&rdquo; (p.ej., las necesarias para la misma navegaci&oacute;n por la plataforma u aplicaci&oacute;n); &ldquo;las de personalizaci&oacute;n o configuraci&oacute;n&rdquo; (p.ej., que permiten que la p&aacute;gina reconozca el idioma del usuario, etc.); y &ldquo;las de seguridad&rdquo; (p.ej., detectar intentos err&oacute;neos y reiterados de conexi&oacute;n a un sitio).</p>
+
+<p>7.3. &iquest;Se sirven cookies en la Plataforma?, &iquest;Qu&eacute; son?</p>
+
+<p>En la Plataforma se utilizan cookies, es decir, archivos o dispositivos que se descargan en el equipo terminal del usuario (ordenador personal, un smartphone, una tablet, terminales y dispositivos m&oacute;viles, etc.), con independencia de su car&aacute;cter, y con la finalidad principal de garantizar el correcto funcionamiento de la Plataforma y sirven para mejorar la experiencia como usuario. As&iacute;, con car&aacute;cter general, y sin perjuicio de lo dispuesto a continuaci&oacute;n, las cookies permitir&aacute;n la navegaci&oacute;n por la Plataforma, as&iacute; como ciertas utilidades y servicios dispuestas en la misma, por lo que se le advierte que su inhabilitaci&oacute;n o bloqueo puede afectar a la navegaci&oacute;n o a la correcta o amplia utilizaci&oacute;n de aqu&eacute;lla por el usuario.</p>
+
+<p>Adem&aacute;s, se le informa que, en la p&aacute;gina web de esRadio, se emplea una tecnolog&iacute;a de detecci&oacute;n de bloqueadores de anuncios para advertir a los usuarios que los usan que no podr&aacute;n escuchar la emisi&oacute;n en directo o los audios en diferido por razones t&eacute;cnicas.</p>
+
+<p>7.4. &iquest;Qu&eacute; cookies utilizamos en la Plataforma?</p>
+
+<p>Las cookies podr&aacute;n ser propias y de terceros. Las cookies propias son las que se env&iacute;an o sirven al equipo terminal del usuario desde la Plataforma (editor) siendo gestionadas por &eacute;ste, mientras que las cookies de terceros son las que se env&iacute;an o sirven al equipo terminal del usuario desde otros dominios o equipos no gestionados por la Plataforma (editor), sino por otra entidad que trata los datos obtenidos trav&eacute;s de las cookies.</p>
+
+<p>Asimismo, las anteriores cookies pueden ser de sesi&oacute;n o persistentes. Las primeras son un tipo de cookies dise&ntilde;adas para recabar y almacenar datos mientras el usuario accede a la Plataforma con la finalidad principal de almacenar informaci&oacute;n que solo interesa conservar para la prestaci&oacute;n del servicio solicitado por el usuario en una sola ocasi&oacute;n. Sin embargo, con las segundas los datos siguen almacenados en el terminal del usuario y pueden ser accedidos y tratados durante un per&iacute;odo definido por el responsable de la cookie.</p>
+
+<p>Las cookies tambi&eacute;n pueden ser t&eacute;cnicas al permitir al usuario la navegaci&oacute;n a trav&eacute;s de la Plataforma y la utilizaci&oacute;n de las diferentes opciones o servicios dispuestos a trav&eacute;s del mismo por ejemplo, controlar el tr&aacute;fico y la comunicaci&oacute;n de datos, identificar la sesi&oacute;n, acceder a partes de acceso restringido, recordar los elementos que integran una petici&oacute;n contractual, utilizar elementos de seguridad durante la navegaci&oacute;n, almacenar contenidos para la difusi&oacute;n de videos o sonido o compartir contenidos a trav&eacute;s de redes sociales.</p>
+
+<p>Tambi&eacute;n pueden ser de personalizaci&oacute;n, refiri&eacute;ndose a aqu&eacute;llas que permiten al usuario acceder al servicio con algunas caracter&iacute;sticas predefinidas en funci&oacute;n de ciertos criterios asociados a su propio terminal, por ejemplo, el tipo de navegador a trav&eacute;s del cual accede al servicio, la configuraci&oacute;n regional desde donde accede al servicio, etc&hellip;</p>
+
+<p>De igual forma, pueden tener una finalidad estad&iacute;stico o informativo para el editor en torno al uso particular que los usuarios realizan de su Plataforma y de los contenidos o servicios dispuestos a trav&eacute;s de la misma.&nbsp;</p>
+
+<p>7.5. &iquest;Qui&eacute;n utiliza las cookies?</p>
+
+<p>La informaci&oacute;n que se recaba a trav&eacute;s de las cookies que se sirven a trav&eacute;s de la Plataforma puede ser utilizadas, tanto por el titular de la misma, cuanto por un tercero que preste un servicio a este titular.</p>
+
+<p>7.6. Gesti&oacute;n y configuraci&oacute;n de las cookies.</p>
+
+<p>A partir de la informaci&oacute;n ofrecida en esta pol&iacute;tica, le ofrecemos informaci&oacute;n sobre c&oacute;mo puede llevar a cabo la gesti&oacute;n de las cookies utilizadas en la Plataforma a trav&eacute;s de las diferentes opciones que ofrecen los navegadores m&aacute;s comunes.</p>
+
+<p>Puede gestionar el uso de cookies, incluyendo su bloqueo, lo que depender&aacute; del navegador instalado en su ordenador. Puede obtener m&aacute;s informaci&oacute;n sobre c&oacute;mo gestionar las mismas en el navegador que use.</p>
+
+<p>8. Vigencia y modificaci&oacute;n de la pol&iacute;tica de privacidad y de cookies</p>
+
+<p>La presente pol&iacute;tica est&aacute; vigente desde el d&iacute;a 9 de noviembre de 2018 &ldquo;Inolvidable FM&rdquo; se reserva el derecho de modificar esta pol&iacute;tica, para adaptarla a futuras novedades legislativas, doctrinales o jurisprudenciales que resulten de aplicaci&oacute;n, o por motivos t&eacute;cnicos, operativos, comerciales, corporativos y de negocio, informando previa y razonablemente a los usuarios de los cambios que se produzcan cuando ello sea posible. En todo caso, se recomienda que, cada vez que se acceda a esta Plataforma, se lea con detalle esta pol&iacute;tica, ya que cualquier modificaci&oacute;n ser&aacute; publicada a trav&eacute;s de la misma. Asimismo, &ldquo;Inolvidable FM&rdquo; podr&aacute; informar a los usuarios de forma personal y previa de los cambios proyectados en esta pol&iacute;tica, antes de su entrada en vigor, siempre que ello resultara t&eacute;cnica y razonablemente posible, en particular, cuando &eacute;stos tengan la consideraci&oacute;n de usuarios registrados o de clientes de &ldquo;Inolvidable FM&rdquo;.</p>
+
+<p>9. Opci&oacute;n de t&iacute;tulo de la cl&aacute;usula</p>
+
+<p>La protecci&oacute;n de sus derechos es importante para &ldquo;Inolvidable FM&rdquo;, por lo que, en caso de cualquier, cuesti&oacute;n o sugerencia que quisiera hacernos llegar en torno a la presente pol&iacute;tica, por favor, no dude en ponerse en contacto con nosotros a trav&eacute;s de la direcci&oacute;n de correo electr&oacute;nico administracion@radiolaspalmas.com</p>
+
+<p>10. Competencia y fuero aplicable</p>
+
+<p>Con car&aacute;cter general, cualquier controversia y conflicto ser&aacute; sometido con car&aacute;cter preferente por las partes al conocimiento de las mismas a los efectos de recabar una soluci&oacute;n amistosa y de com&uacute;n acuerdo utilizando, a estos fines, por lo que concierne a &ldquo;Inolvidable FM&rdquo;, el canal de contacto legal (o delegado de protecci&oacute;n de datos, en caso de estar designado) descrito en el apartado 9 de la presente pol&iacute;tica. En caso de no ser posible la misma, atendiendo a los criterios contenidos en el RGPD para la determinaci&oacute;n de la competencia de la autoridad l&iacute;der o principal en orden el conocimiento de cualquier conflicto, controversia o reclamaci&oacute;n en torno a la presente pol&iacute;tica de privacidad y de cookies, al menos, en v&iacute;a administrativa, se informa que tal autoridad ser&aacute; la Agencia Espa&ntilde;ola de Protecci&oacute;n de Datos (AEPD), debi&eacute;ndose atender, en todo caso, a lo previsto en el art&iacute;culo 56 del RGPD. Por lo que concierne al derecho a la tutela judicial efectiva contra &ldquo;Inolvidable FM&rdquo; en estos casos, se estar&aacute; asimismo a lo dispuesto en el art&iacute;culo 79.2 del RGPD, debiendo ejercitarse la acci&oacute;n que corresponda ante los Jueces y Tribunales de la ciudad de Madrid en la medida en que el &ldquo;Inolvidable FM&rdquo; es una sociedad radicada en Espa&ntilde;a. En todo caso, la normativa aplicable ser&aacute; la espa&ntilde;ola.</p>
+</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="emisoras-asociadas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Emisoras Asociadas</h4>
+            </div>
+            <div class="modal-body">
+                <p><p>Para m&aacute;s INFORMACION sobre emisoras que deseen asociar su programaci&oacute;n con Inolvidable FM y beneficiarse de un servicio l&iacute;der, de calidad y auditado en el EGM s&iacute;rvase contactar al +34 622 206 404</p>
+</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/template/estandar/js/jquery.js"></script>
+<script src="/template/estandar/js/jquery-ui.js"></script>
+<script src="/template/estandar/js/bootstrap.min.js"></script>
+<script src="/template/estandar/js/jquery.bxslider.js"></script>
+<script src="/template/estandar/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/template/estandar/js/jquery.easing.1.3.js"></script>
+<script src="/template/estandar/js/superfish.js"></script>
+<script src="/template/estandar/js/camera.js"></script>
+<script src="/template/estandar/js/mediaelement-and-player.js"></script>
+<script src="/template/estandar/js/mep-feature-playlist.js"></script>
+<script src="/template/estandar/js/slick.min.js"></script>
+<script src="/template/estandar/js/jquery.jrumble.1.3.min.js"></script>
+<script src="/template/estandar/js/jquery.sticky.js"></script>
+<script src="/template/estandar/js/jquery.queryloader2.js"></script>
+<script src="/template/estandar/js/jquery.appear.js"></script>
+<script src="/template/estandar/js/jquery.ui.totop.js"></script>
+<script src="/template/estandar/js/jquery.equalheights.js"></script>
+<script src="/template/estandar/js/jquery.caroufredsel.js"></script>
+<script src="/template/estandar/js/jquery.touchSwipe.min.js"></script>
+
+
+<script type="text/javascript" src="/template/estandar/js/lastfm.api.md5.js"></script>
+<script type="text/javascript" src="/template/estandar/js/lastfm.api.js"></script>
+<script type="text/javascript" src="/template/estandar/js/lastfm.api.cache.js"></script>
+<script type="text/javascript" src="/template/estandar/js/swfobject.js"></script>
+
+<script src="/template/estandar/js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+<script src="/template/estandar/js/audio4_html5.js?v=2" type="text/javascript"></script>
+
+<script src="/template/estandar/js/simple-sidebar.js"></script>
+
+<script src="/template/estandar/js/jquery.swipebox.min.js"></script>
+
+<script src="/template/estandar/js/scripts.js"></script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<script>
+
+    $(document).on("click", ".btn_programas", function () {
+        console.log("mostrando programas...");
+        $(".programa_oculto").removeClass("programa_oculto");
+        $(".btn_programas").remove();
+    });
+
+    $(document).ready(function () {
+        $('.bxslider').bxSlider(
+            {
+                //            pause: 8000,
+                mode: 'fade',
+                //            speed: 2000,
+                pager: false,
+
+                controls: true,
+                //flechas//
+                nextSelector: '#slider-next',
+                prevSelector: '#slider-prev',
+                nextText: '<i class="fa fa-chevron-right flechas dos" aria-hidden="true"></i>',
+                prevText: '<i class="fa fa-chevron-left flechas uno" aria-hidden="true"></i>'
+            }
+        );
+
+    });
+
+    // Swipebox
+
+    $(".swipebox").swipebox({
+
+        hideBarsDelay: 0,
+        afterOpen: function () {
+            var $selectorClose = $("#swipebox-close");
+            var clickAction = "touchend click";
+
+            $selectorClose.unbind(clickAction);
+
+            $selectorClose.bind(clickAction, function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                $.swipebox.close();
+            });
+        },
+
+    });
+
+    $(window).scroll(function bajar() {
+        var scrollTop = $(window).scrollTop();
+
+        $('.menu_bot a').each(function () {
+
+            var currLink = $(this);
+            var headerElem = $(currLink.attr("href"));
+
+            if (scrollTop > $(headerElem).offset().top - 155) {
+
+                $('.menu_bot').removeClass("active");
+
+                currLink.parent().addClass("active");
+            }
+
+            //        console.log (scrollTop + $(window).height() + 100 );
+            //        
+            //        console.log ($(document).height());
+
+            if ((scrollTop + $(window).height() + 100) >= $(document).height()) {
+                //            console.log("pie");
+                $('.menu_bot').removeClass("active");
+                $('.menu_bot a[href*="#contactar"]').parent().addClass("active");
+            }
+
+        });
+
+    });
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
+<!--
+<div class="info">
+<a id="player-title-track"  href="#" title=""><script type="text/javascript" src="http://cdn.voscast.com/stats/display.js?key=5cdd8d60a3e0e37d6dfdf0d918c8090b&stats=songtitle"></script></a>			
+<a id="player-title-album" href="#" title="#" class="infoalbum"></a>
+<a id="player-title-artist" href="#" title="#" class="infoartist"></a>
+</div>
+-->
+<script>
+
+    var pagina = 2;
+    function dame_productos(paginacion){
+
+        if(paginacion === undefined) {
+            paginacion = false;
+        }
+        var datos = {
+            dame_productos:1,
+            idioma:'es'
+        }
+
+        if (datos['fecha'] != ''){
+            datos['fecha'] = $('#fecha').val();
+
+        }
+
+        if (paginacion){
+            datos['page'] = pagina;
+            pagina = pagina+1;
+        }else{
+            sobrescribir = true;
+            pagina = 2;
+        }
+
+        $.ajax({
+            type:"post",
+            data:datos,
+            url:"/index.php",
+            success:function(data){
+
+                if (data!=""){
+
+                    //$(".btn-cargar-mas").addClass("hidden");
+                    if (pagina <= 2)
+                        $("#productos").html(data);
+                    else
+                    {
+                        if (data.search("No se encuentran resultados") == -1)
+                            $("#productos").append(data);
+                    }
+
+                    //obtengo paginas del form 
+                    var pag_totales = $( "#paginas_totales" ).val();
+                    var pag_actual = $( "#pagina_actual" ).val();
+
+                    if ( (data.search("No se encuentran resultados") == -1 && data.length != 1 )){
+
+                        //console.log(pag_actual+"/"+pag_totales);
+                        var pagina_siguiente = parseInt(pag_actual)+1;
+
+                        //PARA NO SACAR EL BOTON SI NO AHCE FALTA
+                        if (parseInt(pag_actual) < parseInt(pag_totales))
+                            $("#productos").append("<div class='clearfix'></div>");
+
+                    }
+                }
+
+                var height = $("#productos").height() ;
+
+
+            }
+        });
+    }
+
+
+    //primera vez
+    dame_productos();
+
+    /**EVENTOS NECESARIOS**/
+
+    $('#fecha').on('change', function() {
+        dame_productos();
+    })
+
+</script>
+
+
+
+<script>
+
+    $("form").submit(function(e){
+        var error=0;
+        $(this).find("[required]").each(function(){
+            if ($(this).val()==""){
+                error+=1;
+                $(this).css("border-color","#ff4000").focus(function(){ $(this).css("border-color","#ddd"); });
+            }
+        });
+        if (error) {
+            e.preventDefault();
+            alert("Debe rellenar los campos obligatorios");
+        }
+    });
+
+    $(".captcha").click(function(){
+        $(this).attr("src","/captcha.php");
+    });
+</script>
+

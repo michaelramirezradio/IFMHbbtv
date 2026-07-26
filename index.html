@@ -21,14 +21,13 @@
 
         <!-- Banner Superior OSD TDT -->
         <div id="osdHeader" class="osd-banner">
-            <div class="station-info-group">
-                <div class="channel-badge">CH 42 TDT</div>
-                <div class="station-info">
-                    <span class="station-title">INOLVIDABLE FM RADIO</span>
-                    <span class="station-sub">Canarias • Gran Canaria 94.8 FM • Tenerife 105.8 FM</span>
+            <div class="header-brand-group">
+                <div class="header-logo-card">
+                    <img src="logo.png" onerror="this.src='logo.svg'" alt="Inolvidable FM" class="header-logo-img" referrerPolicy="no-referrer" />
                 </div>
+                <div class="header-slogan">LA MÚSICA DE TU VIDA</div>
             </div>
-            <div class="status-badge" id="audioStatusBadge">AUDIO: TDT CONVENCIONAL</div>
+            <div class="header-interactive-badge">SERVICIOS INTERACTIVOS TDT</div>
         </div>
 
         <!-- Indicador emergente de Botón Rojo en la esquina inferior derecha -->
@@ -43,11 +42,10 @@
         <!-- Menú Lateral Izquierdo (Activado con Botón Rojo) -->
         <div id="sidebarMenu" class="sidebar-menu">
             <div class="sidebar-header">
-                <div class="logo-box">IFM</div>
-                <div>
-                    <div class="sidebar-title">Inolvidable FM</div>
-                    <div class="sidebar-subtitle">Servicios Interactivos TDT</div>
+                <div class="sidebar-logo-card">
+                    <img src="logo.png" onerror="this.src='logo.svg'" alt="Inolvidable FM" class="sidebar-logo-img" referrerPolicy="no-referrer" />
                 </div>
+                <div class="sidebar-subtitle">Servicios Interactivos TDT</div>
             </div>
 
             <div class="menu-list">
@@ -92,22 +90,26 @@
             </div>
 
             <div class="radio-hd-grid">
-                <!-- Portada de Canción / Ecualizador -->
+                <!-- Foto del Radio DJ / Locutor -->
                 <div class="album-art-box">
-                    <img id="coverImg" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&q=80" alt="Portada Canción" />
-                    <div id="liveBadge" class="live-hd-tag">🔴 EMITIENDO HD STREAM</div>
+                    <img id="coverImg" src="djs/michael_ramirez.jpg" alt="Foto Radio DJ Inolvidable FM" />
+                    <div id="liveBadge" class="live-hd-tag">🔴 EN DIRECTO HD</div>
                 </div>
 
-                <!-- Detalle de Metadatos -->
+                <!-- Detalle del Locutor y Programa -->
                 <div class="metadata-box">
-                    <span class="program-tag" id="programName">PROGRAMA: Las Inolvidables de Siempre</span>
-                    <h1 id="songTitle" class="song-title">Como Una Ola</h1>
-                    <h3 id="songArtist" class="song-artist">Rocío Jurado</h3>
+                    <span class="program-tag" id="programName">PROGRAMA: MORNING INOLVIDABLE</span>
+                    <h1 id="songTitle" class="song-title">Michael Ramírez</h1>
+                    <h3 id="songArtist" class="song-artist">Radio DJ & Conductor del Morning</h3>
 
                     <div class="meta-table">
                         <div class="meta-row">
-                            <span class="meta-lbl">Álbum:</span>
-                            <span id="songAlbum" class="meta-val">Como Una Ola (Grandes Éxitos)</span>
+                            <span class="meta-lbl">Horario Emisión:</span>
+                            <span id="songAlbum" class="meta-val">Lunes a Viernes • 05:00 a 11:00 h</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-lbl">Emisora Oficial:</span>
+                            <span class="meta-val">Inolvidable FM Canarias</span>
                         </div>
                         <div class="meta-row">
                             <span class="meta-lbl">Calidad / Bitrate:</span>
@@ -115,21 +117,23 @@
                         </div>
                         <div class="meta-row">
                             <span class="meta-lbl">Servidor Stream:</span>
-                            <span class="meta-val">de4.streamingpulse.com/stream/inolvidablefm</span>
-                        </div>
-                        <div class="meta-row">
-                            <span class="meta-lbl">Audio TDT:</span>
-                            <span class="meta-val text-red">DESACTIVADO (Prioridad Audio HD)</span>
+                            <span class="meta-val">de4.streamingpulse.com/ssl/inolvidablefm</span>
                         </div>
                     </div>
 
-                    <!-- Controles de Reproducción -->
+                    <!-- Controles de Reproducción y Rotación de Locutores -->
                     <div class="player-controls">
                         <button id="btnPlayPause" class="action-btn btn-play" onclick="toggleHdStreamAudio();">
                             ⏸ Pausar Stream HD
                         </button>
+                        <button class="action-btn btn-tdt" onclick="resetToLiveSchedule();">
+                            🔴 En Directo
+                        </button>
+                        <button class="action-btn btn-tdt" onclick="rotateLiveDj();">
+                            👤 Equipo DJ
+                        </button>
                         <button class="action-btn btn-tdt" onclick="restoreTdtAudio();">
-                            📻 Volver a Audio TDT
+                            📻 Audio TDT
                         </button>
                     </div>
                 </div>
