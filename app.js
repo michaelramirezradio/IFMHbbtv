@@ -36,31 +36,31 @@ var currentMenuIndex = 0;
 var djPhotoMap = {
     "Michael Ramírez": {
         remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg",
-        local: "/djs/michael_ramirez.jpg"
+        local: "djs/michael_ramirez.jpg"
     },
     "Juan Carlos Santomé": {
         remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg",
-        local: "/djs/juan_carlos_santome.jpg"
+        local: "djs/juan_carlos_santome.jpg"
     },
     "José Ibáñez": {
         remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg",
-        local: "/djs/jose_ibanez.jpg"
+        local: "djs/jose_ibanez.jpg"
     },
     "Jaime Falcón": {
         remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png",
-        local: "/djs/jaime_falcon.png"
+        local: "djs/jaime_falcon.png"
     },
     "Carmen Díaz": {
         remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg",
-        local: "/djs/carmen_diaz.jpg"
+        local: "djs/carmen_diaz.jpg"
     },
     "Xavier Valiño": {
         remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ffna010eanr12mf1o5m1dtjbi2a.jpg",
-        local: "/djs/xavier_valino.jpg"
+        local: "djs/xavier_valino.jpg"
     },
     "Tony Besa": {
         remote: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg",
-        local: "/djs/tony_besa.png"
+        local: "djs/tony_besa.png"
     }
 };
 
@@ -69,8 +69,8 @@ function getDjPhotoSources(djName, fallbackPath) {
         return djPhotoMap[djName];
     }
     return {
-        remote: fallbackPath || "/logo.png",
-        local: "/logo.png"
+        remote: fallbackPath || "logo.png",
+        local: "logo.png"
     };
 }
 
@@ -82,8 +82,8 @@ function handleCoverImgError(img) {
         img.removeAttribute("data-fallback");
         return;
     }
-    if (!img.src.endsWith("/logo.png") && !img.src.endsWith("logo.png")) {
-        img.src = "/logo.png";
+    if (!img.src.endsWith("logo.png") && !img.src.endsWith("logo.png")) {
+        img.src = "logo.png";
     }
 }
 window.handleCoverImgError = handleCoverImgError;
@@ -92,67 +92,67 @@ window.handleCoverImgError = handleCoverImgError;
 var officialWeeklySchedule = {
     // 0 = Domingo, 1 = Lunes, 2 = Martes, 3 = Miércoles, 4 = Jueves, 5 = Viernes, 6 = Sábado
     1: [ // LUNES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
         { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
         { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
         { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
         { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
         { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
     ],
     2: [ // MARTES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
         { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
         { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
         { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
         { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
         { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
     ],
     3: [ // MIÉRCOLES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
         { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
         { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
         { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
         { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
         { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
     ],
     4: [ // JUEVES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
         { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
         { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
         { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
         { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
         { start: "21:00", end: "23:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
     ],
     5: [ // VIERNES
-        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "01:00", end: "05:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
         { start: "05:00", end: "11:00", show: "Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
         { start: "11:00", end: "15:00", show: "Fórmula Inolvidable", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
         { start: "15:00", end: "17:00", show: "Prime Time del Atasco", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
         { start: "17:00", end: "21:00", show: "Fórmula Inolvidable", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
         { start: "21:00", end: "22:00", show: "Inolvidables de Colección", dj: "Carmen Díaz", title: "Radio DJ & Conductora de Colección", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1frnqu0qct1psc106q7ij1r1a.jpg" },
-        { start: "22:00", end: "23:00", show: "Club 958", dj: "Tony Besa", title: "Radio DJ & Especialista Música Llenapistas", photo: "/djs/tony_besa.png" },
-        { start: "23:00", end: "01:00", show: "Inolvidables para Bailar", dj: "Emisión Automática", title: "Selección Bailable de Fin de Semana", photo: "/logo.png" }
+        { start: "22:00", end: "23:00", show: "Club 958", dj: "Tony Besa", title: "Radio DJ & Especialista Música Llenapistas", photo: "djs/tony_besa.png" },
+        { start: "23:00", end: "01:00", show: "Inolvidables para Bailar", dj: "Emisión Automática", title: "Selección Bailable de Fin de Semana", photo: "logo.png" }
     ],
     6: [ // SÁBADO
-        { start: "01:00", end: "07:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "01:00", end: "07:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
         { start: "07:00", end: "11:00", show: "Lo Mejor del Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
         { start: "11:00", end: "17:00", show: "Fórmula Weekend", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
         { start: "17:00", end: "22:00", show: "Fórmula Weekend", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
         { start: "22:00", end: "23:00", show: "Funkytown", dj: "Jaime Falcón", title: "Radio DJ & Creador de Funkytown", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
-        { start: "23:00", end: "01:00", show: "Inolvidables para Bailar", dj: "Emisión Automática", title: "Selección Bailable de Fin de Semana", photo: "/logo.png" }
+        { start: "23:00", end: "01:00", show: "Inolvidables para Bailar", dj: "Emisión Automática", title: "Selección Bailable de Fin de Semana", photo: "logo.png" }
     ],
     0: [ // DOMINGO
-        { start: "01:00", end: "07:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "/logo.png" },
+        { start: "01:00", end: "07:00", show: "Fórmula Inolvidable Noche", dj: "Emisión Automática", title: "Fórmula Nocturna Inolvidable FM", photo: "logo.png" },
         { start: "07:00", end: "11:00", show: "Lo Mejor del Morning Inolvidable", dj: "Michael Ramírez", title: "Radio DJ & Conductor del Morning", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" },
         { start: "11:00", end: "15:00", show: "Fórmula Weekend", dj: "José Ibáñez", title: "Radio DJ & Conductor de El Prime Time", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1j3j3ev8e11gc114jdf7i2ebari.jpg" },
         { start: "15:00", end: "18:00", show: "Fórmula Weekend", dj: "Juan Carlos Santomé", title: "Radio DJ & Coordinador Musical", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijapk7uso8m11sn10r1g05mhia.jpg" },
         { start: "18:00", end: "22:00", show: "Fórmula Weekend", dj: "Jaime Falcón", title: "Radio DJ & Especialista Soul/Funk", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ijaq5gkcidervbr0v1jvp1sv7a.png" },
         { start: "22:00", end: "23:00", show: "Pase Privado", dj: "Xavier Valiño", title: "Periodista & Crítico de Pop y Rock", photo: "https://inolvidablefm.es/cmsAdmin/uploads/o_1ffna010eanr12mf1o5m1dtjbi2a.jpg" },
-        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "/logo.png" }
+        { start: "23:00", end: "01:00", show: "Baladas Inolvidables", dj: "Emisión Automática", title: "Selección Nocturna de Baladas", photo: "logo.png" }
     ]
 };
 
@@ -198,7 +198,7 @@ var radioDjs = [
         title: "Radio DJ & Especialista Música Llenapistas",
         program: "CLUB 958",
         schedule: "Viernes • 22:00 a 23:00 h",
-        photo: "/djs/tony_besa.png"
+        photo: "djs/tony_besa.png"
     },
     {
         name: "Xavier Valiño",
@@ -485,6 +485,9 @@ function closeAllPanels() {
     var panels = document.querySelectorAll(".content-panel");
     for (var i = 0; i < panels.length; i++) {
         panels[i].classList.remove("active");
+        if (panels[i].id === "panelTdtSplit" || panels[i].id === "panelMobileIntranet") {
+            panels[i].style.display = "none";
+        }
     }
 }
 
@@ -622,3 +625,243 @@ function resetToLiveSchedule() {
     isManualDjOverride = false;
     updateLiveDjMetadata();
 }
+
+/* ==========================================================================
+   PORTAL COMERCIAL Y CARTELERÍA DIGITAL TDT PARA BARES
+   ========================================================================== */
+
+var currentTheme = "pizarra";
+var mobileOrderItems = [];
+
+/**
+ * Actualizar la información del cartel publicitario del bar en tiempo real
+ */
+function updateBarOffer() {
+    var barName = document.getElementById("barNameInput") ? document.getElementById("barNameInput").value : "Bar Restaurante La Plaza";
+    var barLoc = document.getElementById("barLocationInput") ? document.getElementById("barLocationInput").value : "Las Palmas de Gran Canaria";
+    var offerTitle = document.getElementById("offerTitleInput") ? document.getElementById("offerTitleInput").value : "Menú Ejecutivo del Día";
+    var timeSlot = document.getElementById("timeSlotInput") ? document.getElementById("timeSlotInput").value : "Almuerzos (12:00 - 16:00 h)";
+    var firstDish = document.getElementById("firstDishInput") ? document.getElementById("firstDishInput").value : "Puchero Canario con Siete Carnes";
+    var secondDish = document.getElementById("secondDishInput") ? document.getElementById("secondDishInput").value : "Cherne a la Espalda con Papas Arrugadas y Mojo";
+    var dessert = document.getElementById("dessertInput") ? document.getElementById("dessertInput").value : "Mousse de Gofio + Copa de Vino o Cerveza";
+    var price = document.getElementById("priceInput") ? document.getElementById("priceInput").value : "12,50 €";
+    var photoUrl = document.getElementById("photoUrlInput") ? document.getElementById("photoUrlInput").value : "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80";
+
+    // 1. Actualizar Vista Previa Miniatura
+    if (document.getElementById("previewBarName")) document.getElementById("previewBarName").innerText = barName || "Bar Restaurante";
+    if (document.getElementById("previewBarLocation")) document.getElementById("previewBarLocation").innerText = "📍 " + (barLoc || "Canarias");
+    if (document.getElementById("previewOfferTitle")) document.getElementById("previewOfferTitle").innerText = offerTitle || "OFERTA DEL DÍA";
+    if (document.getElementById("previewFirstDish")) document.getElementById("previewFirstDish").innerText = firstDish;
+    if (document.getElementById("previewSecondDish")) document.getElementById("previewSecondDish").innerText = secondDish;
+    if (document.getElementById("previewDessert")) document.getElementById("previewDessert").innerText = dessert;
+    if (document.getElementById("previewPrice")) document.getElementById("previewPrice").innerText = price;
+    if (document.getElementById("previewDishImg")) document.getElementById("previewDishImg").src = photoUrl;
+
+    // 2. Actualizar Pantalla TDT Fullscreen 50/50
+    if (document.getElementById("fullBarName")) document.getElementById("fullBarName").innerText = barName || "Bar Restaurante";
+    if (document.getElementById("fullBarLocation")) document.getElementById("fullBarLocation").innerText = "📍 " + (barLoc || "Canarias");
+    if (document.getElementById("fullTimeSlot")) document.getElementById("fullTimeSlot").innerText = timeSlot.split(" ")[0].toUpperCase() || "OFERTA";
+    if (document.getElementById("fullOfferTitle")) document.getElementById("fullOfferTitle").innerText = offerTitle || "MENÚ DEL DÍA";
+    if (document.getElementById("fullFirstDish")) document.getElementById("fullFirstDish").innerText = firstDish;
+    if (document.getElementById("fullSecondDish")) document.getElementById("fullSecondDish").innerText = secondDish;
+    if (document.getElementById("fullDessert")) document.getElementById("fullDessert").innerText = dessert;
+    if (document.getElementById("fullPrice")) document.getElementById("fullPrice").innerText = price;
+    if (document.getElementById("fullDishImg")) document.getElementById("fullDishImg").src = photoUrl;
+
+    // 3. Generar Código QR Dinámico (Apunta al modo Carta Móvil con el parámetro del bar)
+    var mobileUrl = window.location.origin + window.location.pathname + "?mode=mobile_intranet&bar=" + encodeURIComponent(barName);
+    var qrApiUrl = "https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=" + encodeURIComponent(mobileUrl);
+    
+    if (document.getElementById("previewQrImg")) document.getElementById("previewQrImg").src = qrApiUrl;
+    if (document.getElementById("fullQrImg")) document.getElementById("fullQrImg").src = qrApiUrl;
+
+    // 4. Sincronizar Carta Móvil
+    if (document.getElementById("mobileBarName")) document.getElementById("mobileBarName").innerText = barName;
+    if (document.getElementById("mobileBarLocation")) document.getElementById("mobileBarLocation").innerText = "📍 " + barLoc + " • TDT Inolvidable FM";
+    if (document.getElementById("mobileOfferTitle")) document.getElementById("mobileOfferTitle").innerText = offerTitle;
+    if (document.getElementById("mobilePriceTag")) document.getElementById("mobilePriceTag").innerText = price;
+    if (document.getElementById("mobFirstDishTitle")) document.getElementById("mobFirstDishTitle").innerText = firstDish;
+    if (document.getElementById("mobSecondDishTitle")) document.getElementById("mobSecondDishTitle").innerText = secondDish;
+    if (document.getElementById("mobDessertTitle")) document.getElementById("mobDessertTitle").innerText = dessert;
+
+    // 5. Sincronizar Metadatos del DJ en Split
+    var liveData = getLiveProgramAndDj();
+    if (liveData) {
+        if (document.getElementById("splitProgramName")) document.getElementById("splitProgramName").innerText = "PROGRAMA: " + liveData.show;
+        if (document.getElementById("splitDjName")) document.getElementById("splitDjName").innerText = liveData.dj;
+        if (document.getElementById("splitShowTitle")) document.getElementById("splitShowTitle").innerText = liveData.title;
+        if (document.getElementById("miniProgramText")) document.getElementById("miniProgramText").innerText = liveData.show;
+        if (document.getElementById("miniSongText")) document.getElementById("miniSongText").innerText = liveData.dj;
+        
+        var splitPhotoEl = document.getElementById("splitDjPhoto");
+        if (splitPhotoEl) {
+            var sources = getDjPhotoSources(liveData.dj, liveData.photo);
+            splitPhotoEl.setAttribute("data-fallback", sources.local);
+            splitPhotoEl.onerror = function() { handleCoverImgError(this); };
+            splitPhotoEl.src = sources.remote;
+        }
+    }
+}
+window.updateBarOffer = updateBarOffer;
+
+/**
+ * Seleccionar plantilla de diseño visual para el cartel
+ */
+function selectTheme(themeName) {
+    currentTheme = themeName;
+
+    // Actualizar botones de plantilla
+    var themeBtns = document.querySelectorAll(".theme-btn");
+    themeBtns.forEach(function(btn) {
+        if (btn.getAttribute("data-theme") === themeName) {
+            btn.classList.add("active");
+        } else {
+            btn.classList.remove("active");
+        }
+    });
+
+    // Aplicar clase de tema a las cajas del cartel
+    var miniCartel = document.getElementById("miniCartelBox");
+    var fullCartel = document.getElementById("fullCartelThemeBox");
+
+    if (miniCartel) {
+        miniCartel.className = "mini-split-right theme-" + themeName;
+    }
+    if (fullCartel) {
+        fullCartel.className = "bar-cartel-full-card theme-" + themeName;
+    }
+}
+window.selectTheme = selectTheme;
+
+/**
+ * Seleccionar preset de foto de plato
+ */
+function selectPhotoPreset(url) {
+    var photoInput = document.getElementById("photoUrlInput");
+    if (photoInput) {
+        photoInput.value = url;
+        updateBarOffer();
+    }
+    var chips = document.querySelectorAll(".chip-btn");
+    chips.forEach(function(c) {
+        if (c.getAttribute("onclick") && c.getAttribute("onclick").indexOf(url) !== -1) {
+            c.classList.add("active");
+        } else {
+            c.classList.remove("active");
+        }
+    });
+}
+window.selectPhotoPreset = selectPhotoPreset;
+
+/**
+ * Abrir Modo Pantalla Completa TDT 50/50
+ */
+function openTdtSplitMode() {
+    updateBarOffer();
+    closeAllPanels();
+    var splitPanel = document.getElementById("panelTdtSplit");
+    if (splitPanel) {
+        splitPanel.style.display = "flex";
+        activePanelId = "panelTdtSplit";
+    }
+}
+window.openTdtSplitMode = openTdtSplitMode;
+
+/**
+ * Simular escaneo de código QR (Abre vista de carta móvil para clientes)
+ */
+function simulateQrScan() {
+    updateBarOffer();
+    var mobilePanel = document.getElementById("panelMobileIntranet");
+    if (mobilePanel) {
+        mobilePanel.style.display = "flex";
+    }
+}
+window.simulateQrScan = simulateQrScan;
+
+/**
+ * Cerrar la carta móvil del cliente
+ */
+function closeMobileIntranet() {
+    var mobilePanel = document.getElementById("panelMobileIntranet");
+    if (mobilePanel) {
+        mobilePanel.style.display = "none";
+    }
+}
+window.closeMobileIntranet = closeMobileIntranet;
+
+/**
+ * Cambiar de pestaña dentro del Portal de Empresas (Editor vs Tarifas)
+ */
+function switchEmpresasTab(tab) {
+    var secEditor = document.getElementById("secEmpresasEditor");
+    var secRates = document.getElementById("secEmpresasRates");
+    var tabEditor = document.getElementById("tabBtnEditor");
+    var tabRates = document.getElementById("tabBtnRates");
+
+    if (tab === "editor") {
+        if (secEditor) secEditor.style.display = "flex";
+        if (secRates) secRates.style.display = "none";
+        if (tabEditor) tabEditor.classList.add("active");
+        if (tabRates) tabRates.classList.remove("active");
+    } else if (tab === "rates") {
+        if (secEditor) secEditor.style.display = "none";
+        if (secRates) secRates.style.display = "flex";
+        if (tabEditor) tabEditor.classList.remove("active");
+        if (tabRates) tabRates.classList.add("active");
+    }
+}
+window.switchEmpresasTab = switchEmpresasTab;
+
+/**
+ * Añadir plato al pedido de simulación del cliente en mesa
+ */
+function addDishToMobileOrder(dishName) {
+    mobileOrderItems.push(dishName);
+    var listEl = document.getElementById("orderItemsList");
+    var countEl = document.getElementById("orderItemCount");
+
+    if (countEl) countEl.innerText = mobileOrderItems.length + " Platos";
+
+    if (listEl) {
+        listEl.innerHTML = "";
+        mobileOrderItems.forEach(function(item, idx) {
+            var li = document.createElement("li");
+            li.innerHTML = "✔ " + item;
+            listEl.appendChild(li);
+        });
+    }
+}
+window.addDishToMobileOrder = addDishToMobileOrder;
+
+/**
+ * Enviar pedido desde el smartphone
+ */
+function submitMobileOrder() {
+    if (mobileOrderItems.length === 0) {
+        alert("Por favor, seleccione al menos un plato antes de enviar su pedido.");
+        return;
+    }
+    var tableNum = document.getElementById("mobileTableNum") ? document.getElementById("mobileTableNum").value : "Mesa 1";
+    alert("🚀 ¡PEDIDO ENVIADO A COCINA!\n\nEstablecimiento: " + (document.getElementById("barNameInput") ? document.getElementById("barNameInput").value : "Bar") + "\nUbicación: " + tableNum + "\nPlatos pedidos:\n" + mobileOrderItems.join("\n") + "\n\n¡Gracias por utilizar la Cartelería Digital TDT Inolvidable FM!");
+    mobileOrderItems = [];
+    var listEl = document.getElementById("orderItemsList");
+    var countEl = document.getElementById("orderItemCount");
+    if (countEl) countEl.innerText = "0 Platos";
+    if (listEl) listEl.innerHTML = '<li class="empty-msg">Pulsa "+ Añadir" en los platos para seleccionarlos.</li>';
+}
+window.submitMobileOrder = submitMobileOrder;
+
+// Detectar parámetro URL si se abre escaneando el QR desde un móvil real
+window.addEventListener("DOMContentLoaded", function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("mode") === "mobile_intranet") {
+        var barParam = urlParams.get("bar");
+        if (barParam && document.getElementById("barNameInput")) {
+            document.getElementById("barNameInput").value = barParam;
+        }
+        simulateQrScan();
+    }
+    updateBarOffer();
+});
+
