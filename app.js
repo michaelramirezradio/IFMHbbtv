@@ -154,17 +154,17 @@ var radioDjs = [
 ];
 
 /**
- * Obtener las partes de tiempo oficial en Canarias (Atlantic/Canary)
+ * Obtener las partes de tiempo oficial en Madrid (España) - Europe/Madrid
  */
-function getCanaryTimeParts() {
+function getMadridTimeParts() {
     var now = new Date();
     try {
-        var dayName = new Intl.DateTimeFormat("en-US", { timeZone: "Atlantic/Canary", weekday: "short" }).format(now);
+        var dayName = new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Madrid", weekday: "short" }).format(now);
         var dayMap = { "Sun": 0, "Mon": 1, "Tue": 2, "Wed": 3, "Thu": 4, "Fri": 5, "Sat": 6 };
         var day = (dayMap[dayName] !== undefined) ? dayMap[dayName] : now.getDay();
 
         var timeStr = new Intl.DateTimeFormat("en-US", {
-            timeZone: "Atlantic/Canary",
+            timeZone: "Europe/Madrid",
             hour: "2-digit",
             minute: "2-digit",
             hour12: false
@@ -183,13 +183,17 @@ function getCanaryTimeParts() {
     }
 }
 
+function getCanaryTimeParts() {
+    return getMadridTimeParts();
+}
+
 /**
- * Obtener el programa y Radio DJ en directo según la parrilla oficial y la hora exacta del usuario
+ * Obtener el programa y Radio DJ en directo según la parrilla oficial y la hora exacta de Madrid (España)
  */
 function getLiveProgramAndDj() {
-    var canaryTime = getCanaryTimeParts();
-    var day = canaryTime.day;
-    var nowMinutes = canaryTime.nowMinutes;
+    var madridTime = getMadridTimeParts();
+    var day = madridTime.day;
+    var nowMinutes = madridTime.nowMinutes;
 
     var daySchedule = officialWeeklySchedule[day];
     if (daySchedule) {
@@ -389,11 +393,15 @@ function selectGreenRadioHd() {
 }
 
 /**
- * OPCIÓN AMARILLA: Portal Web
+ * OPCIÓN AMARILLA: Conócenos (Presentación Corporativa)
  */
 function selectYellowWeb() {
     closeSidebarMenu();
     openPanel("panelWeb");
+}
+
+function selectYellowConocenos() {
+    selectYellowWeb();
 }
 
 /**
@@ -501,7 +509,7 @@ function updateLiveDjMetadata() {
             if (programNameEl) programNameEl.innerText = "PROGRAMA EN DIRECTO: " + liveData.show;
             if (songTitleEl) songTitleEl.innerText = liveData.dj;
             if (songArtistEl) songArtistEl.innerText = liveData.title;
-            if (songAlbumEl) songAlbumEl.innerText = liveData.start + " a " + liveData.end + " h (Canarias)";
+            if (songAlbumEl) songAlbumEl.innerText = liveData.start + " a " + liveData.end + " h";
             if (liveBadgeEl) liveBadgeEl.innerText = "🔴 EN DIRECTO HD";
 
             if (coverImgEl) {
