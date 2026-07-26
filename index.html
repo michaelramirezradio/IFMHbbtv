@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="application/vnd.hbbtv.xhtml+xml; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Inolvidable FM - Canal TDT HbbTV Interactivo</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body onload="initHbbtvApp();">
+    <!-- Objetos OIPF estándar HbbTV para Smart TV (ETSI TS 102 796) -->
+    <object id="oipfAppMan" type="application/oipfApplicationManager" style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; visibility: hidden;"></object>
+    <object id="oipfConfig" type="application/oipfConfiguration" style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; visibility: hidden;"></object>
+    <object id="broadcastVideo" type="video/broadcast" style="position: absolute; left: 0px; top: 0px; width: 100vw; height: 100vh; z-index: 1;"></object>
+
+    <!-- Reproductor de Audio Stream para Radio HD por Internet -->
+    <audio id="hdStreamAudio" src="https://de4.streamingpulse.com/stream/inolvidablefm" preload="none" crossorigin="anonymous"></audio>
+
+    <!-- Capa Gráfica de Interfaz HbbTV -->
+    <div id="hbbtvCanvas">
+
+        <!-- Banner Superior OSD TDT -->
+        <div id="osdHeader" class="osd-banner">
+            <div class="station-info-group">
+                <div class="channel-badge">CH 42 TDT</div>
+                <div class="station-info">
+                    <span class="station-title">INOLVIDABLE FM RADIO</span>
+                    <span class="station-sub">Canarias • Gran Canaria 94.8 FM • Tenerife 105.8 FM</span>
+                </div>
+            </div>
+            <div class="status-badge" id="audioStatusBadge">AUDIO: TDT CONVENCIONAL</div>
+        </div>
+
+        <!-- Indicador emergente de Botón Rojo en la esquina inferior derecha -->
+        <div id="redPrompt" class="red-prompt-card" onclick="toggleSidebarMenu();">
+            <div class="red-dot-animated"></div>
+            <div class="prompt-text-group">
+                <span class="prompt-tag">[BOTÓN ROJO]</span>
+                <span class="prompt-title">Menú Interactivo HbbTV</span>
+            </div>
+        </div>
+
+        <!-- Menú Lateral Izquierdo (Activado con Botón Rojo) -->
+        <div id="sidebarMenu" class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo-box">IFM</div>
+                <div>
+                    <div class="sidebar-title">Inolvidable FM</div>
+                    <div class="sidebar-subtitle">Servicios Interactivos TDT</div>
+                </div>
+            </div>
+
+            <div class="menu-list">
+                <div class="menu-label">OPCIONES MANDO TV</div>
+
+                <div id="mItem0" class="menu-btn btn-green active" onclick="selectGreenRadioHd();">
+                    <span class="key-badge badge-green">VERDE</span>
+                    <div class="btn-info">
+                        <span class="btn-title">Escuchar Radio en HD</span>
+                        <span class="btn-sub">Streaming 320 kbps + Metadatos</span>
+                    </div>
+                </div>
+
+                <div id="mItem1" class="menu-btn btn-yellow" onclick="selectYellowWeb();">
+                    <span class="key-badge badge-yellow">AMARILLO</span>
+                    <div class="btn-info">
+                        <span class="btn-title">Web Inolvidable FM</span>
+                        <span class="btn-sub">inolvidablefm.com en directo</span>
+                    </div>
+                </div>
+
+                <div id="mItem2" class="menu-btn btn-blue" onclick="selectBlueEmpresas();">
+                    <span class="key-badge badge-blue">AZUL</span>
+                    <div class="btn-info">
+                        <span class="btn-title">Inolvidable FM Empresas</span>
+                        <span class="btn-sub">Portal Comercial & Código QR Demo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>Pulse <strong>ESC / ATRÁS</strong> para cerrar el menú</p>
+                <p class="tech-tag">Perfil HbbTV 2.0.3 / ETSI TS 102 796</p>
+            </div>
+        </div>
+
+        <!-- PANEL DE CONTENIDO 1: Radio en HD (Botón Verde) -->
+        <div id="panelRadioHd" class="content-panel bg-panel-green">
+            <div class="panel-header">
+                <h2>Radio Inolvidable FM en Alta Definición (HD)</h2>
+                <button class="close-btn" onclick="closeAllPanels();">✕ Cerrar</button>
+            </div>
+
+            <div class="radio-hd-grid">
+                <!-- Portada de Canción / Ecualizador -->
+                <div class="album-art-box">
+                    <img id="coverImg" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&q=80" alt="Portada Canción" />
+                    <div id="liveBadge" class="live-hd-tag">🔴 EMITIENDO HD STREAM</div>
+                </div>
+
+                <!-- Detalle de Metadatos -->
+                <div class="metadata-box">
+                    <span class="program-tag" id="programName">PROGRAMA: Las Inolvidables de Siempre</span>
+                    <h1 id="songTitle" class="song-title">Como Una Ola</h1>
+                    <h3 id="songArtist" class="song-artist">Rocío Jurado</h3>
+
+                    <div class="meta-table">
+                        <div class="meta-row">
+                            <span class="meta-lbl">Álbum:</span>
+                            <span id="songAlbum" class="meta-val">Como Una Ola (Grandes Éxitos)</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-lbl">Calidad / Bitrate:</span>
+                            <span class="meta-val text-green">320 kbps (HD Stereo AAC)</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-lbl">Servidor Stream:</span>
+                            <span class="meta-val">de4.streamingpulse.com/stream/inolvidablefm</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-lbl">Audio TDT:</span>
+                            <span class="meta-val text-red">DESACTIVADO (Prioridad Audio HD)</span>
+                        </div>
+                    </div>
+
+                    <!-- Controles de Reproducción -->
+                    <div class="player-controls">
+                        <button id="btnPlayPause" class="action-btn btn-play" onclick="toggleHdStreamAudio();">
+                            ⏸ Pausar Stream HD
+                        </button>
+                        <button class="action-btn btn-tdt" onclick="restoreTdtAudio();">
+                            📻 Volver a Audio TDT
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PANEL DE CONTENIDO 2: Carga Web Inolvidable FM (Botón Amarillo) -->
+        <div id="panelWeb" class="content-panel bg-panel-yellow">
+            <div class="panel-header">
+                <h2>Navegador Web: inolvidablefm.com</h2>
+                <div class="web-bar">
+                    <span class="url-badge">https://www.inolvidablefm.com</span>
+                    <a href="https://www.inolvidablefm.com" target="_blank" class="external-link-btn">Abrir Pestaña ↗</a>
+                    <button class="close-btn" onclick="closeAllPanels();">✕ Cerrar</button>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <iframe id="webIframe" src="https://www.inolvidablefm.com" title="Web Inolvidable FM"></iframe>
+            </div>
+        </div>
+
+        <!-- PANEL DE CONTENIDO 3: Inolvidable FM Empresas con Código QR (Botón Azul) -->
+        <div id="panelEmpresas" class="content-panel bg-panel-blue">
+            <div class="panel-header">
+                <h2>Inolvidable FM Empresas & Publicidad TDT</h2>
+                <button class="close-btn" onclick="closeAllPanels();">✕ Cerrar</button>
+            </div>
+
+            <div class="empresas-grid">
+                <!-- Columna Código QR -->
+                <div class="qr-card">
+                    <div class="qr-header">CÓDIGO QR MODO DEMO</div>
+                    <p class="qr-sub">Escanee con su teléfono móvil para acceder al Portal Comercial</p>
+                    
+                    <div class="qr-frame">
+                        <img id="qrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.inolvidablefm.com/empresas" alt="Código QR Inolvidable FM Empresas" />
+                    </div>
+
+                    <p class="qr-url">https://www.inolvidablefm.com/empresas</p>
+                    <button class="action-btn btn-scan" onclick="alert('¡Escaneo de prueba simulado! Redirigiendo a inolvidablefm.com/empresas');">
+                        📱 Simular Escaneo
+                    </button>
+                </div>
+
+                <!-- Columna Tarifas Comercial -->
+                <div class="rates-card">
+                    <h3>Planes de Publicidad TDT + Radio HD</h3>
+                    <p class="rates-intro">Alcance a más de 120.000 oyentes en Canarias diariamente:</p>
+
+                    <div class="plan-box">
+                        <div class="plan-title">PLAN ÉXITO TDT + HD CANARIAS</div>
+                        <div class="plan-price">399 € <small>/ mes</small></div>
+                        <ul class="plan-features">
+                            <li>✓ 18 Cuñas publicitarias diarias en horarios Prime</li>
+                            <li>✓ Banner interactivo destacado en la App HbbTV</li>
+                            <li>✓ Código QR exclusivo para promociones directas</li>
+                            <li>✓ Producción de cuña profesional incluida</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info-bar">
+                        <span>📞 Teléfono Comercial: <strong>928 300 900</strong></span>
+                        <span>✉️ Email: <strong>comercial@inolvidablefm.com</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra Inferior de Leyenda de Colores HbbTV -->
+        <div class="color-footer-bar">
+            <div class="color-key-item" onclick="toggleSidebarMenu();">
+                <span class="dot dot-red"></span>
+                <span>ROJO: Menú</span>
+            </div>
+            <div class="color-key-item" onclick="selectGreenRadioHd();">
+                <span class="dot dot-green"></span>
+                <span>VERDE: Radio HD</span>
+            </div>
+            <div class="color-key-item" onclick="selectYellowWeb();">
+                <span class="dot dot-yellow"></span>
+                <span>AMARILLO: Web</span>
+            </div>
+            <div class="color-key-item" onclick="selectBlueEmpresas();">
+                <span class="dot dot-blue"></span>
+                <span>AZUL: Empresas QR</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script Principal de Lógica HbbTV JavaScript -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

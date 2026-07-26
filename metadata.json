@@ -1,0 +1,6 @@
+{
+  "name": "Inolvidable FM - HbbTV TDT",
+  "description": "Aplicación interactiva HbbTV para el canal de TDT de Inolvidable FM Radio con streaming HD, sitio web, metadatos en directo y portal para Empresas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
