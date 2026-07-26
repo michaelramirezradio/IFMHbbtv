@@ -70,8 +70,8 @@
                 <div id="mItem2" class="menu-btn btn-blue" onclick="selectBlueEmpresas();">
                     <span class="key-badge badge-blue">AZUL</span>
                     <div class="btn-info">
-                        <span class="btn-title">Inolvidable FM Empresas</span>
-                        <span class="btn-sub">Portal Comercial & Código QR Demo</span>
+                        <span class="btn-title">Empresas / Publicar Oferta TDT</span>
+                        <span class="btn-sub">Portal Comercial & Cartelería Digital para Bares</span>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
             <div class="radio-hd-grid">
                 <!-- Foto del Radio DJ / Locutor -->
                 <div class="album-art-box">
-                    <img id="coverImg" src="https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" data-fallback="/djs/michael_ramirez.jpg" onerror="handleCoverImgError(this)" alt="Foto Radio DJ Inolvidable FM" />
+                    <img id="coverImg" src="https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" data-fallback="djs/michael_ramirez.jpg" onerror="handleCoverImgError(this)" alt="Foto Radio DJ Inolvidable FM" />
                     <div id="liveBadge" class="live-hd-tag">🔴 EN DIRECTO HD</div>
                 </div>
 
@@ -155,48 +155,447 @@
             </div>
         </div>
 
-        <!-- PANEL DE CONTENIDO 3: Inolvidable FM Empresas con Código QR (Botón Azul) -->
+        <!-- PANEL DE CONTENIDO 3: Portal Comercial y Cartelería Digital TDT para Bares (Botón Azul) -->
         <div id="panelEmpresas" class="content-panel bg-panel-blue">
             <div class="panel-header">
-                <h2>Inolvidable FM Empresas & Publicidad TDT</h2>
-                <button class="close-btn" onclick="closeAllPanels();">✕ Cerrar</button>
+                <div class="panel-header-title-group">
+                    <h2>Portal Comercial & Cartelería Digital TDT para Bares</h2>
+                    <span class="sub-header-tag">Inolvidable FM Canarias</span>
+                </div>
+                <div class="portal-nav-tabs">
+                    <button class="portal-tab active" id="tabBtnEditor" onclick="switchEmpresasTab('editor');">🛠️ Editor de Cartel</button>
+                    <button class="portal-tab" id="tabBtnScreen" onclick="openTdtSplitMode();">📺 Emitir TDT 50/50</button>
+                    <button class="portal-tab" id="tabBtnMobile" onclick="simulateQrScan();">📱 Carta Móvil</button>
+                    <button class="portal-tab" id="tabBtnRates" onclick="switchEmpresasTab('rates');">💼 Tarifas TDT</button>
+                    <button class="close-btn" onclick="closeAllPanels();">✕ Cerrar</button>
+                </div>
             </div>
 
-            <div class="empresas-grid">
-                <!-- Columna Código QR -->
-                <div class="qr-card">
-                    <div class="qr-header">CÓDIGO QR MODO DEMO</div>
-                    <p class="qr-sub">Escanee con su teléfono móvil para acceder al Portal Comercial</p>
-                    
-                    <div class="qr-frame">
-                        <img id="qrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.inolvidablefm.com/empresas" alt="Código QR Inolvidable FM Empresas" />
+            <!-- SECCIÓN 1: Editor Interactivo y Vista Previa en Tiempo Real -->
+            <div id="secEmpresasEditor" class="empresas-editor-layout">
+                <!-- Columna Formulario de Configuración -->
+                <div class="editor-form-card">
+                    <div class="card-section-title">
+                        <span>⚙️ Datos del Establecimiento y Oferta</span>
+                        <small>Los cambios se actualizan en vivo en la pantalla TDT</small>
                     </div>
 
-                    <p class="qr-url">https://www.inolvidablefm.com/empresas</p>
-                    <button class="action-btn btn-scan" onclick="alert('¡Escaneo de prueba simulado! Redirigiendo a inolvidablefm.com/empresas');">
-                        📱 Simular Escaneo
-                    </button>
+                    <div class="form-grid-2col">
+                        <div class="form-group">
+                            <label for="barNameInput">Nombre del Bar / Local:</label>
+                            <input type="text" id="barNameInput" value="Bar Restaurante La Plaza" oninput="updateBarOffer();" placeholder="Ej. Bar El Mirador" />
+                        </div>
+                        <div class="form-group">
+                            <label for="barLocationInput">Ubicación / Municipio:</label>
+                            <input type="text" id="barLocationInput" value="Las Palmas de Gran Canaria" oninput="updateBarOffer();" placeholder="Ej. Maspalomas, Telde..." />
+                        </div>
+                    </div>
+
+                    <div class="form-grid-2col">
+                        <div class="form-group">
+                            <label for="offerTitleInput">Título del Menú u Oferta:</label>
+                            <input type="text" id="offerTitleInput" value="Menú Ejecutivo del Día" oninput="updateBarOffer();" placeholder="Ej. Oferta Caña + Tapa" />
+                        </div>
+                        <div class="form-group">
+                            <label for="timeSlotInput">Franja Horaria de Emisión:</label>
+                            <select id="timeSlotInput" onchange="updateBarOffer();">
+                                <option value="Desayunos (08:00 - 12:00 h)">☕ Desayunos (08:00 - 12:00 h)</option>
+                                <option value="Almuerzos (12:00 - 16:00 h)" selected>🍲 Almuerzos (12:00 - 16:00 h)</option>
+                                <option value="Tarde / Cañas (16:00 - 20:00 h)">🍻 Tarde / Cañas (16:00 - 20:00 h)</option>
+                                <option value="Cenas (20:00 - 00:00 h)">🍷 Cenas (20:00 - 00:00 h)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstDishInput">1º Plato:</label>
+                        <input type="text" id="firstDishInput" value="Puchero Canario con Siete Carnes" oninput="updateBarOffer();" placeholder="Primer plato..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="secondDishInput">2º Plato:</label>
+                        <input type="text" id="secondDishInput" value="Cherne a la Espalda con Papas Arrugadas y Mojo" oninput="updateBarOffer();" placeholder="Segundo plato..." />
+                    </div>
+
+                    <div class="form-grid-2col">
+                        <div class="form-group">
+                            <label for="dessertInput">Postre / Bebida Incluida:</label>
+                            <input type="text" id="dessertInput" value="Mousse de Gofio + Copa de Vino o Cerveza" oninput="updateBarOffer();" placeholder="Postre o bebida..." />
+                        </div>
+                        <div class="form-group">
+                            <label for="priceInput">Precio (€):</label>
+                            <input type="text" id="priceInput" value="12,50 €" oninput="updateBarOffer();" placeholder="Ej. 12,50 €" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Plantilla Estilística del Cartel:</label>
+                        <div class="theme-selector-list">
+                            <button class="theme-btn active" data-theme="pizarra" onclick="selectTheme('pizarra');">📋 Pizarra Tradicional</button>
+                            <button class="theme-btn" data-theme="dorado" onclick="selectTheme('dorado');">✨ Elegante Dorado</button>
+                            <button class="theme-btn" data-theme="neon" onclick="selectTheme('neon');">⚡ Neón Moderno</button>
+                            <button class="theme-btn" data-theme="cafeteria" onclick="selectTheme('cafeteria');">☕ Cafetería Cálida</button>
+                            <button class="theme-btn" data-theme="pizzeria" onclick="selectTheme('pizzeria');">🍕 Pizzería / Italiano</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Foto de la Oferta / Plato:</label>
+                        <div class="photo-preset-chips">
+                            <button class="chip-btn active" onclick="selectPhotoPreset('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80');">🐟 Cherne y Papas</button>
+                            <button class="chip-btn" onclick="selectPhotoPreset('https://images.unsplash.com/photo-1515443961218-a51367888e4b?auto=format&fit=crop&w=800&q=80');">🍢 Tapas Variadas</button>
+                            <button class="chip-btn" onclick="selectPhotoPreset('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80');">🍔 Burger Gourmet</button>
+                            <button class="chip-btn" onclick="selectPhotoPreset('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80');">🍕 Pizza Artesanal</button>
+                            <button class="chip-btn" onclick="selectPhotoPreset('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80');">☕ Café & Tarta</button>
+                        </div>
+                        <input type="text" id="photoUrlInput" value="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" oninput="updateBarOffer();" placeholder="URL de la imagen del plato..." style="margin-top: 6px;" />
+                    </div>
+
+                    <div class="form-actions-bar">
+                        <button class="btn-action-primary" onclick="openTdtSplitMode();">
+                            📺 Emitir en Pantalla TDT (50 / 50)
+                        </button>
+                        <button class="btn-action-secondary" onclick="simulateQrScan();">
+                            📱 Simular Escaneo QR
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Columna Tarifas Comercial -->
-                <div class="rates-card">
-                    <h3>Planes de Publicidad TDT + Radio HD</h3>
-                    <p class="rates-intro">Alcance a más de 120.000 oyentes en Canarias diariamente:</p>
+                <!-- Columna Vista Previa TDT 50/50 en Miniatura -->
+                <div class="editor-preview-card">
+                    <div class="card-section-title">
+                        <span>📺 Vista Previa Cartel TDT (Layout 50/50)</span>
+                        <span class="live-pill">● VIVO 320k</span>
+                    </div>
 
+                    <div class="mini-tdt-preview-container">
+                        <!-- Mini Lado Izquierdo (50% Radio HD) -->
+                        <div class="mini-split-left">
+                            <div class="mini-badge-hd">🔴 RADIO HD 320K</div>
+                            <div class="mini-vinyl-wrap">
+                                <div class="mini-vinyl-disc spin-vinyl">
+                                    <div class="mini-vinyl-center">
+                                        <img src="logo.png" alt="Inolvidable FM" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-radio-info">
+                                <span class="mini-program" id="miniProgramText">MORNING INOLVIDABLE</span>
+                                <span class="mini-song" id="miniSongText">Michael Ramírez</span>
+                                <span class="mini-artist">Inolvidable FM Canarias</span>
+                            </div>
+                            <div class="mini-eq-bars">
+                                <span class="mini-bar b1"></span>
+                                <span class="mini-bar b2"></span>
+                                <span class="mini-bar b3"></span>
+                                <span class="mini-bar b4"></span>
+                                <span class="mini-bar b5"></span>
+                            </div>
+                        </div>
+
+                        <!-- Mini Lado Derecho (50% Cartel del Bar) -->
+                        <div class="mini-split-right theme-pizarra" id="miniCartelBox">
+                            <div class="mini-cartel-header">
+                                <span class="mini-bar-name" id="previewBarName">Bar Restaurante La Plaza</span>
+                                <span class="mini-bar-loc" id="previewBarLocation">📍 Las Palmas de Gran Canaria</span>
+                            </div>
+
+                            <div class="mini-cartel-offer-badge" id="previewOfferTitle">MENÚ EJECUTIVO DEL DÍA</div>
+
+                            <div class="mini-cartel-img-box">
+                                <img id="previewDishImg" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Plato" />
+                            </div>
+
+                            <div class="mini-cartel-dishes">
+                                <div class="mini-dish-row"><strong>1º:</strong> <span id="previewFirstDish">Puchero Canario</span></div>
+                                <div class="mini-dish-row"><strong>2º:</strong> <span id="previewSecondDish">Cherne a la Espalda</span></div>
+                                <div class="mini-dish-row"><strong>Postre:</strong> <span id="previewDessert">Mousse de Gofio</span></div>
+                            </div>
+
+                            <div class="mini-cartel-footer">
+                                <div class="mini-price-tag" id="previewPrice">12,50 €</div>
+                                <div class="mini-qr-box">
+                                    <img id="previewQrImg" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://inolvidablefm.com" alt="QR Code" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preview-tips-bar">
+                        <span>💡 El código QR permite a los clientes pedir desde la mesa con su teléfono inteligente.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 2: Tarifas Comerciales -->
+            <div id="secEmpresasRates" class="empresas-rates-layout" style="display: none;">
+                <h3>Planes de Cartelería Digital TDT & Radio HD</h3>
+                <p class="rates-intro">Alcance a miles de comensales en bares y restaurantes de Canarias:</p>
+
+                <div class="rates-grid-3col">
                     <div class="plan-box">
-                        <div class="plan-title">PLAN ÉXITO TDT + HD CANARIAS</div>
-                        <div class="plan-price">399 € <small>/ mes</small></div>
+                        <div class="plan-title">PLAN LOCAL RESTAURACIÓN</div>
+                        <div class="plan-price">149 € <small>/ mes</small></div>
                         <ul class="plan-features">
-                            <li>✓ 18 Cuñas publicitarias diarias en horarios Prime</li>
-                            <li>✓ Banner interactivo destacado en la App HbbTV</li>
-                            <li>✓ Código QR exclusivo para promociones directas</li>
-                            <li>✓ Producción de cuña profesional incluida</li>
+                            <li>✓ Emisión de Cartel Digital en TDT en directo</li>
+                            <li>✓ Código QR interactivo con carta móvil</li>
+                            <li>✓ Actualización ilimitada de menús diarios</li>
+                            <li>✓ Soporte técnico prioritario HbbTV</li>
                         </ul>
                     </div>
 
-                    <div class="contact-info-bar">
-                        <span>📞 Teléfono Comercial: <strong>928 300 900</strong></span>
-                        <span>✉️ Email: <strong>comercial@inolvidablefm.com</strong></span>
+                    <div class="plan-box featured-plan">
+                        <div class="plan-badge-top">MÁS POPULAR</div>
+                        <div class="plan-title">PLAN ÉXITO TDT + RADIO HD</div>
+                        <div class="plan-price">299 € <small>/ mes</small></div>
+                        <ul class="plan-features">
+                            <li>✓ Todo lo del Plan Local Restauración</li>
+                            <li>✓ 12 Cuñas publicitarias diarias en Radio HD</li>
+                            <li>✓ Producción de audio profesional incluida</li>
+                            <li>✓ Posicionamiento destacado en pantalla TDT</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-box">
+                        <div class="plan-title">PLAN CADENA / FRANQUICIA</div>
+                        <div class="plan-price">499 € <small>/ mes</small></div>
+                        <ul class="plan-features">
+                            <li>✓ Red multi-local para hasta 5 bares</li>
+                            <li>✓ Gestor de contenidos unificado</li>
+                            <li>✓ 24 Cuñas publicitarias en hora punta</li>
+                            <li>✓ Informe mensual de lecturas QR</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-info-bar">
+                    <span>📞 Atención Comercial: <strong>928 300 900</strong></span>
+                    <span>✉️ Email: <strong>comercial@inolvidablefm.com</strong></span>
+                    <span>🌐 Portal: <strong>www.inolvidablefm.es/empresas</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PANTALLA TDT COMPLETA DIVIDIDA 50 / 50 (Modo Emisión en Directo para Bares) -->
+        <div id="panelTdtSplit" class="content-panel tdt-split-fullscreen">
+            <div class="split-top-header">
+                <div class="split-header-brand">
+                    <img src="logo.png" onerror="this.src='logo.svg'" alt="Inolvidable FM" class="split-logo" />
+                    <span class="split-badge-tdt">CANAL TDT CANARIAS • EMISIÓN HBBTV HD</span>
+                </div>
+                <div class="split-header-actions">
+                    <button class="action-btn btn-scan" onclick="simulateQrScan();">📱 Simular Escaneo Carta Móvil</button>
+                    <button class="close-btn" onclick="closeAllPanels(); selectBlueEmpresas();">✕ Salir de Modo TDT</button>
+                </div>
+            </div>
+
+            <div class="tdt-5050-wrapper">
+                <!-- MITAD IZQUIERDA (50%): Reproductor de Radio HD Inolvidable FM -->
+                <div class="split-left-col">
+                    <div class="radio-card-split">
+                        <div class="badge-live-stream">
+                            <span class="red-pulse-dot"></span>
+                            <span>RADIO HD 320 KBPS EN DIRECTO</span>
+                        </div>
+
+                        <!-- Showcase del Radio DJ (Foto Estática Grande) junto al Logotipo Gigante de Inolvidable FM -->
+                        <div class="dj-showcase-container">
+                            <div class="dj-photo-frame">
+                                <img id="splitDjPhoto" src="https://inolvidablefm.es/cmsAdmin/uploads/o_1j1fs3ie67ihehj1egulf9hbna.jpg" data-fallback="djs/michael_ramirez.jpg" onerror="handleCoverImgError(this)" alt="Radio DJ Inolvidable FM" class="dj-portrait-img" />
+                                <span class="dj-live-badge">🎙️ EN DIRECTO</span>
+                            </div>
+                            <div class="dj-brand-box">
+                                <img src="logo.png" onerror="this.src='logo.svg'" alt="Inolvidable FM" class="split-brand-logo" />
+                            </div>
+                        </div>
+
+                        <div class="split-radio-metadata">
+                            <span class="split-program-tag" id="splitProgramName">PROGRAMA: MORNING INOLVIDABLE</span>
+                            <h2 class="split-dj-name" id="splitDjName">Michael Ramírez</h2>
+                            <p class="split-show-title" id="splitShowTitle">Radio DJ & Conductor del Morning</p>
+                        </div>
+
+                        <!-- Ecualizador Gráfico Animado de Barras de Audio -->
+                        <div class="audio-equalizer-wrap">
+                            <div class="eq-bars-group">
+                                <div class="eq-bar eq1"></div>
+                                <div class="eq-bar eq2"></div>
+                                <div class="eq-bar eq3"></div>
+                                <div class="eq-bar eq4"></div>
+                                <div class="eq-bar eq5"></div>
+                                <div class="eq-bar eq6"></div>
+                                <div class="eq-bar eq7"></div>
+                                <div class="eq-bar eq8"></div>
+                                <div class="eq-bar eq9"></div>
+                                <div class="eq-bar eq10"></div>
+                            </div>
+                            <span class="eq-status-text">🔊 AUDIO HD 320K AAC STEREO</span>
+                        </div>
+
+                        <div class="split-radio-controls">
+                            <button id="btnSplitPlay" class="action-btn btn-play" onclick="toggleHdStreamAudio();">
+                                ⏸ Pausar Radio HD
+                            </button>
+                            <button class="action-btn btn-tdt" onclick="rotateLiveDj();">
+                                🔄 Cambiar DJ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MITAD DERECHA (50%): Cartel Publicitario del Bar con Plantilla Seleccionada -->
+                <div class="split-right-col">
+                    <div id="fullCartelThemeBox" class="bar-cartel-full-card theme-pizarra">
+                        <div class="cartel-header-bar">
+                            <div class="cartel-bar-title-group">
+                                <h1 id="fullBarName" class="cartel-bar-name">Bar Restaurante La Plaza</h1>
+                                <span id="fullBarLocation" class="cartel-bar-location">📍 Las Palmas de Gran Canaria</span>
+                            </div>
+                            <div id="fullTimeSlot" class="cartel-time-badge">🍲 ALMUERZOS</div>
+                        </div>
+
+                        <div id="fullOfferTitle" class="cartel-offer-title">MENÚ EJECUTIVO DEL DÍA</div>
+
+                        <div class="cartel-body-grid">
+                            <div class="cartel-img-frame">
+                                <img id="fullDishImg" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Foto del Plato" />
+                                <div class="dish-badge-overlay">Especialidad de la Casa</div>
+                            </div>
+
+                            <div class="cartel-menu-list">
+                                <div class="menu-item-row">
+                                    <span class="item-tag">1º PLATO</span>
+                                    <p id="fullFirstDish" class="item-desc">Puchero Canario con Siete Carnes</p>
+                                </div>
+                                <div class="menu-item-row">
+                                    <span class="item-tag">2º PLATO</span>
+                                    <p id="fullSecondDish" class="item-desc">Cherne a la Espalda con Papas Arrugadas y Mojo</p>
+                                </div>
+                                <div class="menu-item-row">
+                                    <span class="item-tag">POSTRE / BEBIDA</span>
+                                    <p id="fullDessert" class="item-desc">Mousse de Gofio + Copa de Vino o Cerveza</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cartel-footer-grid">
+                            <div class="price-box-card">
+                                <span class="price-label">PRECIO MENÚ COMPLETO</span>
+                                <div id="fullPrice" class="price-value">12,50 €</div>
+                                <span class="price-subtext">IGIC Incluido • Pan y Servicio</span>
+                            </div>
+
+                            <div class="qr-code-card">
+                                <div class="qr-img-wrap">
+                                    <img id="fullQrImg" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://inolvidablefm.com" alt="Código QR Pedido Móvil" />
+                                </div>
+                                <div class="qr-instructions">
+                                    <strong>📱 ESCANEA CON TU MÓVIL</strong>
+                                    <p>Consulta la carta completa, ingredientes y pide directamente desde tu mesa.</p>
+                                    <button class="btn-scan-compact" onclick="simulateQrScan();">📱 Simular Escaneo</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISTA DE CARTA MÓVIL INTERACTIVA PARA EL CLIENTE (MESA DEL LOCAL) -->
+        <div id="panelMobileIntranet" class="content-panel mobile-intranet-overlay" style="display: none;">
+            <div class="mobile-device-frame">
+                <div class="mobile-top-bar">
+                    <span class="mobile-time">14:30</span>
+                    <span class="mobile-badge-intranet">📱 CARTA DIGITAL EN MESA</span>
+                    <button class="mobile-close-btn" onclick="closeMobileIntranet();">✕ Salir</button>
+                </div>
+
+                <div class="mobile-app-header">
+                    <div class="mobile-bar-branding">
+                        <h2 id="mobileBarName">Bar Restaurante La Plaza</h2>
+                        <span id="mobileBarLocation">📍 Las Palmas de Gran Canaria • TDT Inolvidable FM</span>
+                    </div>
+                    <div class="table-selector-pill">
+                        <label>Mesa:</label>
+                        <select id="mobileTableNum">
+                            <option value="Mesa 1">Mesa 1</option>
+                            <option value="Mesa 2" selected>Mesa 2 (Comedor)</option>
+                            <option value="Mesa 3">Mesa 3 (Terraza)</option>
+                            <option value="Mesa 4">Mesa 4</option>
+                            <option value="Mesa 5">Mesa 5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mobile-body-content">
+                    <div class="mobile-promo-banner">
+                        <span class="promo-tag">OFERTA ESPECIAL EN TELEVISIÓN TDT</span>
+                        <h3 id="mobileOfferTitle">Menú Ejecutivo del Día</h3>
+                        <p id="mobileOfferSummary">Includes 1º, 2º, Postre, Bebida y Pan por solo <strong id="mobilePriceTag">12,50 €</strong></p>
+                    </div>
+
+                    <div class="mobile-categories-tabs">
+                        <button class="mob-cat-btn active">🍲 Menú del Día</button>
+                        <button class="mob-cat-btn">🥖 Tapas y Raciones</button>
+                        <button class="mob-cat-btn">🍷 Bebidas</button>
+                        <button class="mob-cat-btn">🍮 Postres</button>
+                    </div>
+
+                    <div class="mobile-dishes-list">
+                        <!-- Primer Plato -->
+                        <div class="mob-dish-card">
+                            <div class="mob-dish-info">
+                                <span class="mob-course-badge">PRIMER PLATO</span>
+                                <h4 id="mobFirstDishTitle">Puchero Canario con Siete Carnes</h4>
+                                <p>Elaboración tradicional con verdura fresca del país y papas de la tierra.</p>
+                                <span class="allergen-tag">🌱 Productos Canarios</span>
+                            </div>
+                            <button class="btn-add-item" onclick="addDishToMobileOrder('1º Plato: Puchero Canario');">+ Añadir</button>
+                        </div>
+
+                        <!-- Segundo Plato -->
+                        <div class="mob-dish-card">
+                            <div class="mob-dish-info">
+                                <span class="mob-course-badge">SEGUNDO PLATO</span>
+                                <h4 id="mobSecondDishTitle">Cherne a la Espalda con Papas Arrugadas</h4>
+                                <p>Pescado fresco del día a la plancha con mojo verde y mojo picón artesanal.</p>
+                                <span class="allergen-tag">🐟 Sin Gluten</span>
+                            </div>
+                            <button class="btn-add-item" onclick="addDishToMobileOrder('2º Plato: Cherne a la Espalda');">+ Añadir</button>
+                        </div>
+
+                        <!-- Postre/Bebida -->
+                        <div class="mob-dish-card">
+                            <div class="mob-dish-info">
+                                <span class="mob-course-badge">POSTRE / BEBIDA</span>
+                                <h4 id="mobDessertTitle">Mousse de Gofio + Cerveza Dorada / Vino</h4>
+                                <p>Postre casero canario y bebida a elegir de nuestra bodega local.</p>
+                            </div>
+                            <button class="btn-add-item" onclick="addDishToMobileOrder('Postre: Mousse de Gofio');">+ Añadir</button>
+                        </div>
+                    </div>
+
+                    <!-- Resumen del Pedido en Mesa -->
+                    <div class="mobile-order-drawer">
+                        <div class="drawer-header">
+                            <span>📋 Mi Pedido (Simulación en Mesa)</span>
+                            <span id="orderItemCount" class="count-pill">0 Platos</span>
+                        </div>
+                        <ul id="orderItemsList" class="order-items-list">
+                            <li class="empty-msg">Pulsa "+ Añadir" en los platos para seleccionarlos.</li>
+                        </ul>
+                        <button class="btn-submit-order" onclick="submitMobileOrder();">
+                            🚀 Confirmar y Pedir a Camareno
+                        </button>
+                    </div>
+
+                    <!-- Mini Reproductor de Radio HD en el Móvil del Cliente -->
+                    <div class="mobile-radio-bar">
+                        <div class="mob-radio-info">
+                            <span class="mob-live-dot">● EN DIRECTO</span>
+                            <span>Escuchando Radio HD Inolvidable FM en el local</span>
+                        </div>
+                        <button class="mob-play-btn" onclick="toggleHdStreamAudio();">▶ Escuchar</button>
                     </div>
                 </div>
             </div>
@@ -218,7 +617,7 @@
             </div>
             <div class="color-key-item" onclick="selectBlueEmpresas();">
                 <span class="dot dot-blue"></span>
-                <span>AZUL: Empresas QR</span>
+                <span>AZUL: Empresas TDT</span>
             </div>
         </div>
 
